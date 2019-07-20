@@ -1,0 +1,780 @@
+2019-07-19 20:53:32,976 p=19325 u=ansible |  node1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2019-07-19 20:53:53,346 p=19340 u=ansible |   [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2019-07-19 20:53:53,361 p=19340 u=ansible |   [WARNING]: Could not match supplied host pattern, ignoring: node1
+
+2019-07-19 20:55:46,087 p=19349 u=ansible |   [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2019-07-19 20:55:46,100 p=19349 u=ansible |   [WARNING]: Could not match supplied host pattern, ignoring: node1
+
+2019-07-19 20:56:14,998 p=19358 u=ansible |  node1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Invalid/incorrect password: Permission denied, please try again.", 
+    "unreachable": true
+}
+2019-07-19 20:58:29,503 p=19376 u=ansible |   [WARNING]: No python interpreters found for host node1 (tried ['/usr/bin/python', 'python3.7', 'python3.6', 'python3.5', 'python2.7', 'python2.6', '/usr/libexec/platform-python',
+'/usr/bin/python3', 'python'])
+
+2019-07-19 20:58:29,511 p=19376 u=ansible |  node1 | FAILED! => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "module_stderr": "Shared connection to node1 closed.\r\n", 
+    "module_stdout": "/bin/sh: 1: /usr/bin/python: not found\r\n", 
+    "msg": "The module failed to execute correctly, you probably need to set the interpreter.\nSee stdout/stderr for the exact error", 
+    "rc": 127
+}
+2019-07-19 20:59:38,408 p=19423 u=ansible |   [WARNING]: No python interpreters found for host node1 (tried ['/usr/bin/python', 'python3.7', 'python3.6', 'python3.5', 'python2.7', 'python2.6', '/usr/libexec/platform-python',
+'/usr/bin/python3', 'python'])
+
+2019-07-19 20:59:38,412 p=19423 u=ansible |  node1 | FAILED! => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "module_stderr": "Shared connection to node1 closed.\r\n", 
+    "module_stdout": "/bin/sh: 1: /usr/bin/python: not found\r\n", 
+    "msg": "The module failed to execute correctly, you probably need to set the interpreter.\nSee stdout/stderr for the exact error", 
+    "rc": 127
+}
+2019-07-19 21:11:31,332 p=19544 u=ansible |  node1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2019-07-19 21:13:30,047 p=19559 u=ansible |   [WARNING]: No python interpreters found for host node1 (tried ['/usr/bin/python', 'python3.7', 'python3.6', 'python3.5', 'python2.7', 'python2.6', '/usr/libexec/platform-python',
+'/usr/bin/python3', 'python'])
+
+2019-07-19 21:13:30,052 p=19559 u=ansible |  node1 | FAILED! => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "module_stderr": "Shared connection to node1 closed.\r\n", 
+    "module_stdout": "/bin/sh: 1: /usr/bin/python: not found\r\n", 
+    "msg": "The module failed to execute correctly, you probably need to set the interpreter.\nSee stdout/stderr for the exact error", 
+    "rc": 127
+}
+2019-07-19 21:55:29,037 p=19761 u=ansible |   [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2019-07-19 21:55:48,570 p=19770 u=ansible |   [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2019-07-19 21:55:48,575 p=19770 u=ansible |   [WARNING]: Could not match supplied host pattern, ignoring: app
+
+2019-07-19 21:56:27,922 p=19780 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-19 21:56:27,927 p=19780 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-19 21:56:33,587 p=19780 u=ansible |  node | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Warning: Permanently added 'node,172.20.0.5' (ECDSA) to the list of known hosts.\r\nPermission denied (publickey,password).", 
+    "unreachable": true
+}
+2019-07-19 21:56:33,780 p=19780 u=ansible |  node1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2019-07-19 21:57:15,722 p=19801 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-19 21:57:15,727 p=19801 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-19 21:57:22,908 p=19801 u=ansible |  node1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2019-07-19 21:57:44,489 p=19816 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-19 21:57:44,492 p=19816 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-19 21:57:52,302 p=19816 u=ansible |   [WARNING]: No python interpreters found for host node1 (tried ['/usr/bin/python', 'python3.7', 'python3.6', 'python3.5', 'python2.7', 'python2.6', '/usr/libexec/platform-python',
+'/usr/bin/python3', 'python'])
+
+2019-07-19 21:57:52,311 p=19816 u=ansible |  node1 | FAILED! => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "module_stderr": "Shared connection to node1 closed.\r\n", 
+    "module_stdout": "/bin/sh: 1: /usr/bin/python: not found\r\n", 
+    "msg": "The module failed to execute correctly, you probably need to set the interpreter.\nSee stdout/stderr for the exact error", 
+    "rc": 127
+}
+2019-07-19 21:58:17,291 p=19862 u=ansible |  ansible 2.8.1
+  config file = /home/ansible/ansible-demo/sample_pingtest/ansible.cfg
+  configured module search path = [u'/home/ansible/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/site-packages/ansible
+  executable location = /bin/ansible
+  python version = 2.7.5 (default, Jul 13 2018, 13:06:57) [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+2019-07-19 21:58:17,293 p=19862 u=ansible |  Using /home/ansible/ansible-demo/sample_pingtest/ansible.cfg as config file
+2019-07-19 21:58:17,424 p=19862 u=ansible |  host_list declined parsing /home/ansible/ansible-demo/sample_pingtest/inventory.ini as it did not pass it's verify_file() method
+2019-07-19 21:58:17,426 p=19862 u=ansible |  script declined parsing /home/ansible/ansible-demo/sample_pingtest/inventory.ini as it did not pass it's verify_file() method
+2019-07-19 21:58:17,427 p=19862 u=ansible |  auto declined parsing /home/ansible/ansible-demo/sample_pingtest/inventory.ini as it did not pass it's verify_file() method
+2019-07-19 21:58:17,429 p=19862 u=ansible |  yaml declined parsing /home/ansible/ansible-demo/sample_pingtest/inventory.ini as it did not pass it's verify_file() method
+2019-07-19 21:58:17,493 p=19862 u=ansible |  Parsed /home/ansible/ansible-demo/sample_pingtest/inventory.ini inventory source with ini plugin
+2019-07-19 21:58:17,515 p=19862 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-19 21:58:17,519 p=19862 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-19 21:58:21,598 p=19862 u=ansible |  META: ran handlers
+2019-07-19 21:58:22,063 p=19862 u=ansible |  <node1> ESTABLISH SSH CONNECTION FOR USER: master
+2019-07-19 21:58:22,078 p=19862 u=ansible |  <node1> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="master"' -o ConnectTimeout=10 -o ControlPath=/home/ansible/.ansible/cp/a19474ea0c node1 '/bin/sh -c '"'"'echo ~master && sleep 0'"'"''
+2019-07-19 21:58:22,228 p=19862 u=ansible |  <node1> (0, '/home/master\n', '')
+2019-07-19 21:58:22,234 p=19862 u=ansible |  <node1> ESTABLISH SSH CONNECTION FOR USER: master
+2019-07-19 21:58:22,253 p=19862 u=ansible |  <node1> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="master"' -o ConnectTimeout=10 -o ControlPath=/home/ansible/.ansible/cp/a19474ea0c node1 '/bin/sh -c '"'"'( umask 77 && mkdir -p "` echo /home/master/.ansible/tmp/ansible-tmp-1563569902.05-191144574081940 `" && echo ansible-tmp-1563569902.05-191144574081940="` echo /home/master/.ansible/tmp/ansible-tmp-1563569902.05-191144574081940 `" ) && sleep 0'"'"''
+2019-07-19 21:58:22,396 p=19862 u=ansible |  <node1> (0, 'ansible-tmp-1563569902.05-191144574081940=/home/master/.ansible/tmp/ansible-tmp-1563569902.05-191144574081940\n', '')
+2019-07-19 21:58:24,796 p=19862 u=ansible |  <node1> Attempting python interpreter discovery
+2019-07-19 21:58:24,804 p=19862 u=ansible |  <node1> ESTABLISH SSH CONNECTION FOR USER: master
+2019-07-19 21:58:24,824 p=19862 u=ansible |  <node1> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="master"' -o ConnectTimeout=10 -o ControlPath=/home/ansible/.ansible/cp/a19474ea0c node1 '/bin/sh -c '"'"'echo PLATFORM; uname; echo FOUND; command -v '"'"'"'"'"'"'"'"'/usr/bin/python'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.7'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.6'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.5'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python2.7'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python2.6'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'/usr/libexec/platform-python'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'/usr/bin/python3'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python'"'"'"'"'"'"'"'"'; echo ENDFOUND && sleep 0'"'"''
+2019-07-19 21:58:24,977 p=19862 u=ansible |  <node1> (0, 'PLATFORM\nLinux\nFOUND\nENDFOUND\n', '')
+2019-07-19 21:58:25,012 p=19862 u=ansible |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/system/ping.py
+2019-07-19 21:58:25,028 p=19862 u=ansible |  <node1> PUT /home/ansible/.ansible/tmp/ansible-local-19862DoEo__/tmp2QNB51 TO /home/master/.ansible/tmp/ansible-tmp-1563569902.05-191144574081940/AnsiballZ_ping.py
+2019-07-19 21:58:25,062 p=19862 u=ansible |  <node1> SSH: EXEC sftp -b - -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="master"' -o ConnectTimeout=10 -o ControlPath=/home/ansible/.ansible/cp/a19474ea0c '[node1]'
+2019-07-19 21:58:25,320 p=19862 u=ansible |  <node1> (0, 'sftp> put /home/ansible/.ansible/tmp/ansible-local-19862DoEo__/tmp2QNB51 /home/master/.ansible/tmp/ansible-tmp-1563569902.05-191144574081940/AnsiballZ_ping.py\n', '')
+2019-07-19 21:58:25,328 p=19862 u=ansible |  <node1> ESTABLISH SSH CONNECTION FOR USER: master
+2019-07-19 21:58:25,356 p=19862 u=ansible |  <node1> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="master"' -o ConnectTimeout=10 -o ControlPath=/home/ansible/.ansible/cp/a19474ea0c node1 '/bin/sh -c '"'"'chmod u+x /home/master/.ansible/tmp/ansible-tmp-1563569902.05-191144574081940/ /home/master/.ansible/tmp/ansible-tmp-1563569902.05-191144574081940/AnsiballZ_ping.py && sleep 0'"'"''
+2019-07-19 21:58:25,553 p=19862 u=ansible |  <node1> (0, '', '')
+2019-07-19 21:58:25,556 p=19862 u=ansible |  <node1> ESTABLISH SSH CONNECTION FOR USER: master
+2019-07-19 21:58:25,574 p=19862 u=ansible |  <node1> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="master"' -o ConnectTimeout=10 -o ControlPath=/home/ansible/.ansible/cp/a19474ea0c -tt node1 '/bin/sh -c '"'"'/usr/bin/python /home/master/.ansible/tmp/ansible-tmp-1563569902.05-191144574081940/AnsiballZ_ping.py && sleep 0'"'"''
+2019-07-19 21:58:25,723 p=19862 u=ansible |  <node1> (127, '/bin/sh: 1: /usr/bin/python: not found\r\n', 'Shared connection to node1 closed.\r\n')
+2019-07-19 21:58:25,730 p=19862 u=ansible |  <node1> Failed to connect to the host via ssh: Shared connection to node1 closed.
+2019-07-19 21:58:25,761 p=19862 u=ansible |  <node1> ESTABLISH SSH CONNECTION FOR USER: master
+2019-07-19 21:58:25,777 p=19862 u=ansible |  <node1> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="master"' -o ConnectTimeout=10 -o ControlPath=/home/ansible/.ansible/cp/a19474ea0c node1 '/bin/sh -c '"'"'rm -f -r /home/master/.ansible/tmp/ansible-tmp-1563569902.05-191144574081940/ > /dev/null 2>&1 && sleep 0'"'"''
+2019-07-19 21:58:25,937 p=19862 u=ansible |  <node1> (0, '', '')
+2019-07-19 21:58:26,036 p=19862 u=ansible |   [WARNING]: No python interpreters found for host node1 (tried ['/usr/bin/python', 'python3.7', 'python3.6', 'python3.5', 'python2.7', 'python2.6', '/usr/libexec/platform-python',
+'/usr/bin/python3', 'python'])
+
+2019-07-19 21:58:26,058 p=19862 u=ansible |  node1 | FAILED! => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "module_stderr": "Shared connection to node1 closed.\r\n", 
+    "module_stdout": "/bin/sh: 1: /usr/bin/python: not found\r\n", 
+    "msg": "The module failed to execute correctly, you probably need to set the interpreter.\nSee stdout/stderr for the exact error", 
+    "rc": 127
+}
+2019-07-19 22:00:57,260 p=19928 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-19 22:00:57,268 p=19928 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-19 22:01:05,613 p=19928 u=ansible |   [WARNING]: No python interpreters found for host node1 (tried ['/usr/bin/python', 'python3.7', 'python3.6', 'python3.5', 'python2.7', 'python2.6', '/usr/libexec/platform-python',
+'/usr/bin/python3', 'python'])
+
+2019-07-19 22:01:05,622 p=19928 u=ansible |  node1 | FAILED! => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "module_stderr": "Shared connection to node1 closed.\r\n", 
+    "module_stdout": "/bin/sh: 1: /usr/bin/python: not found\r\n", 
+    "msg": "The module failed to execute correctly, you probably need to set the interpreter.\nSee stdout/stderr for the exact error", 
+    "rc": 127
+}
+2019-07-19 22:03:20,666 p=20007 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-19 22:03:20,668 p=20007 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-19 22:03:25,432 p=20007 u=ansible |  172.20.0.4 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2019-07-19 22:03:52,344 p=20022 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-19 22:03:52,347 p=20022 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-19 22:03:57,171 p=20022 u=ansible |  172.20.0.4 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Invalid/incorrect password: Permission denied, please try again.", 
+    "unreachable": true
+}
+2019-07-19 22:15:42,171 p=20142 u=ansible |   [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2019-07-19 22:19:18,318 p=20177 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-19 22:19:18,324 p=20177 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-19 22:19:22,908 p=20177 u=ansible |  172.20.0.4 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2019-07-19 22:19:58,607 p=20192 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-19 22:19:58,609 p=20192 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-19 22:20:07,040 p=20192 u=ansible |   [WARNING]: No python interpreters found for host 172.20.0.4 (tried ['/usr/bin/python', 'python3.7', 'python3.6', 'python3.5', 'python2.7', 'python2.6', '/usr/libexec/platform-python',
+'/usr/bin/python3', 'python'])
+
+2019-07-19 22:20:07,059 p=20192 u=ansible |  172.20.0.4 | FAILED! => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "module_stderr": "Shared connection to 172.20.0.4 closed.\r\n", 
+    "module_stdout": "/bin/sh: 1: /usr/bin/python: not found\r\n", 
+    "msg": "The module failed to execute correctly, you probably need to set the interpreter.\nSee stdout/stderr for the exact error", 
+    "rc": 127
+}
+2019-07-19 22:37:50,845 p=20409 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-19 22:37:50,855 p=20409 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-19 22:38:02,061 p=20409 u=ansible |   [WARNING]: No python interpreters found for host 172.20.0.4 (tried ['/usr/bin/python', 'python3.7', 'python3.6', 'python3.5', 'python2.7', 'python2.6', '/usr/libexec/platform-python',
+'/usr/bin/python3', 'python'])
+
+2019-07-19 22:38:02,123 p=20409 u=ansible |  172.20.0.4 | FAILED! => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "module_stderr": "Shared connection to 172.20.0.4 closed.\r\n", 
+    "module_stdout": "/bin/sh: 1: /usr/bin/python: not found\r\n", 
+    "msg": "The module failed to execute correctly, you probably need to set the interpreter.\nSee stdout/stderr for the exact error", 
+    "rc": 127
+}
+2019-07-20 18:17:46,316 p=6595 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-20 18:17:46,353 p=6595 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-20 18:18:04,121 p=6595 u=ansible |   [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 18:18:04,127 p=6595 u=ansible |  node1 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "ping": "pong"
+}
+2019-07-20 18:19:50,300 p=6809 u=ansible |   [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2019-07-20 18:20:14,548 p=6818 u=ansible |  ERROR! Missing target hosts
+2019-07-20 18:20:31,719 p=6848 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-20 18:20:31,720 p=6848 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-20 18:20:44,155 p=6848 u=ansible |   [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 18:20:44,174 p=6848 u=ansible |  node1 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "ping": "pong"
+}
+2019-07-20 18:20:44,867 p=6848 u=ansible |   [WARNING]: Platform linux on host node is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 18:20:44,878 p=6848 u=ansible |  node | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "ping": "pong"
+}
+2019-07-20 18:23:12,013 p=6944 u=ansible |   [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2019-07-20 18:23:39,745 p=6953 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-20 18:23:39,751 p=6953 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-20 18:23:58,050 p=6953 u=ansible |  localhost | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "ping": "pong"
+}
+2019-07-20 18:24:00,559 p=6953 u=ansible |   [WARNING]: Platform linux on host node is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 18:24:00,651 p=6953 u=ansible |  node | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "ping": "pong"
+}
+2019-07-20 18:24:01,236 p=6953 u=ansible |   [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 18:24:01,238 p=6953 u=ansible |  node1 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "ping": "pong"
+}
+2019-07-20 18:24:01,804 p=6953 u=ansible |   [WARNING]: Platform linux on host lb is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 18:24:01,808 p=6953 u=ansible |  lb | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "ping": "pong"
+}
+2019-07-20 18:24:01,831 p=6953 u=ansible |   [WARNING]: Platform linux on host db is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 18:24:01,835 p=6953 u=ansible |  db | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "ping": "pong"
+}
+2019-07-20 18:24:32,395 p=7156 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-20 18:24:32,403 p=7156 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-20 18:24:39,695 p=7156 u=ansible |  node | FAILED! => {
+    "msg": "The module ifconfig was not found in configured module paths. Additionally, core modules are missing. If this is a checkout, run 'git pull --rebase' to correct this problem."
+}
+2019-07-20 18:24:39,792 p=7156 u=ansible |  localhost | FAILED! => {
+    "msg": "The module ifconfig was not found in configured module paths. Additionally, core modules are missing. If this is a checkout, run 'git pull --rebase' to correct this problem."
+}
+2019-07-20 18:24:40,025 p=7156 u=ansible |  node1 | FAILED! => {
+    "msg": "The module ifconfig was not found in configured module paths. Additionally, core modules are missing. If this is a checkout, run 'git pull --rebase' to correct this problem."
+}
+2019-07-20 18:24:40,194 p=7156 u=ansible |  lb | FAILED! => {
+    "msg": "The module ifconfig was not found in configured module paths. Additionally, core modules are missing. If this is a checkout, run 'git pull --rebase' to correct this problem."
+}
+2019-07-20 18:24:40,371 p=7156 u=ansible |  db | FAILED! => {
+    "msg": "The module ifconfig was not found in configured module paths. Additionally, core modules are missing. If this is a checkout, run 'git pull --rebase' to correct this problem."
+}
+2019-07-20 18:25:13,806 p=7227 u=ansible |  ERROR! Extraneous options or arguments
+2019-07-20 18:25:25,198 p=7232 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-20 18:25:25,220 p=7232 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-20 18:25:32,145 p=7232 u=ansible |  node | FAILED! => {
+    "msg": "The module ip was not found in configured module paths. Additionally, core modules are missing. If this is a checkout, run 'git pull --rebase' to correct this problem."
+}
+2019-07-20 18:25:32,326 p=7232 u=ansible |  localhost | FAILED! => {
+    "msg": "The module ip was not found in configured module paths. Additionally, core modules are missing. If this is a checkout, run 'git pull --rebase' to correct this problem."
+}
+2019-07-20 18:25:32,547 p=7232 u=ansible |  node1 | FAILED! => {
+    "msg": "The module ip was not found in configured module paths. Additionally, core modules are missing. If this is a checkout, run 'git pull --rebase' to correct this problem."
+}
+2019-07-20 18:25:32,721 p=7232 u=ansible |  lb | FAILED! => {
+    "msg": "The module ip was not found in configured module paths. Additionally, core modules are missing. If this is a checkout, run 'git pull --rebase' to correct this problem."
+}
+2019-07-20 18:25:32,862 p=7232 u=ansible |  db | FAILED! => {
+    "msg": "The module ip was not found in configured module paths. Additionally, core modules are missing. If this is a checkout, run 'git pull --rebase' to correct this problem."
+}
+2019-07-20 19:04:17,949 p=7474 u=ansible |  ERROR! Missing target hosts
+2019-07-20 19:04:56,152 p=7479 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-20 19:04:56,158 p=7479 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-20 19:05:03,104 p=7479 u=ansible |  node | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2019-07-20 19:05:03,680 p=7479 u=ansible |  node1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2019-07-20 19:05:04,185 p=7479 u=ansible |  lb | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2019-07-20 19:05:04,371 p=7479 u=ansible |  db | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2019-07-20 19:05:08,165 p=7479 u=ansible |  localhost | CHANGED | rc=0 >>
+ansible-devops
+
+2019-07-20 19:05:41,360 p=7538 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-20 19:05:41,366 p=7538 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-20 19:05:58,673 p=7538 u=ansible |  localhost | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "ping": "pong"
+}
+2019-07-20 19:06:01,367 p=7538 u=ansible |   [WARNING]: Platform linux on host node is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:06:01,386 p=7538 u=ansible |  node | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "ping": "pong"
+}
+2019-07-20 19:06:02,028 p=7538 u=ansible |   [WARNING]: Platform linux on host lb is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:06:02,039 p=7538 u=ansible |  lb | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "ping": "pong"
+}
+2019-07-20 19:06:02,309 p=7538 u=ansible |   [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:06:02,321 p=7538 u=ansible |  node1 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "ping": "pong"
+}
+2019-07-20 19:06:02,360 p=7538 u=ansible |   [WARNING]: Platform linux on host db is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:06:02,380 p=7538 u=ansible |  db | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "ping": "pong"
+}
+2019-07-20 19:06:47,960 p=7741 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-20 19:06:47,963 p=7741 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-20 19:07:03,556 p=7741 u=ansible |  localhost | CHANGED | rc=0 >>
+ansible-devops
+
+2019-07-20 19:07:06,860 p=7741 u=ansible |   [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:07:06,872 p=7741 u=ansible |  node1 | CHANGED | rc=0 >>
+node1
+
+2019-07-20 19:07:08,063 p=7741 u=ansible |   [WARNING]: Platform linux on host db is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:07:08,065 p=7741 u=ansible |  db | CHANGED | rc=0 >>
+db
+
+2019-07-20 19:07:08,312 p=7741 u=ansible |   [WARNING]: Platform linux on host node is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:07:08,317 p=7741 u=ansible |  node | CHANGED | rc=0 >>
+node
+
+2019-07-20 19:07:08,339 p=7741 u=ansible |   [WARNING]: Platform linux on host lb is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:07:08,342 p=7741 u=ansible |  lb | CHANGED | rc=0 >>
+lb
+
+2019-07-20 19:07:41,504 p=7926 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-20 19:07:41,508 p=7926 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-20 19:07:58,117 p=7926 u=ansible |  localhost | CHANGED | rc=0 >>
+br-07c927bfddd7: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 172.18.0.1  netmask 255.255.0.0  broadcast 172.18.255.255
+        ether 02:42:5d:e6:73:9e  txqueuelen 0  (Ethernet)
+        RX packets 19325  bytes 27611099 (26.3 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 6352  bytes 403415 (393.9 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+br-0fd9fd6979e5: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.20.0.1  netmask 255.255.0.0  broadcast 172.20.255.255
+        inet6 fe80::42:b4ff:fe71:75ce  prefixlen 64  scopeid 0x20<link>
+        ether 02:42:b4:71:75:ce  txqueuelen 0  (Ethernet)
+        RX packets 32  bytes 2592 (2.5 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 32  bytes 2592 (2.5 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+br-2e8c881cde2d: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 172.19.0.1  netmask 255.255.0.0  broadcast 172.19.255.255
+        ether 02:42:e8:1e:92:6c  txqueuelen 0  (Ethernet)
+        RX packets 438  bytes 56465 (55.1 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 500  bytes 359179 (350.7 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+br-6dc5dd576802: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 172.28.5.254  netmask 255.255.0.0  broadcast 172.28.255.255
+        ether 02:42:19:0a:92:d0  txqueuelen 0  (Ethernet)
+        RX packets 438  bytes 56465 (55.1 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 500  bytes 359179 (350.7 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+br-81531a1012fe: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 192.168.61.1  netmask 255.255.255.0  broadcast 192.168.61.255
+        ether 02:42:24:e3:4a:f3  txqueuelen 0  (Ethernet)
+        RX packets 6052  bytes 255776 (249.7 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 11480  bytes 27172511 (25.9 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+docker0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        inet 172.17.0.1  netmask 255.255.0.0  broadcast 172.17.255.255
+        inet6 fe80::42:5ff:fe07:186e  prefixlen 64  scopeid 0x20<link>
+        ether 02:42:05:07:18:6e  txqueuelen 0  (Ethernet)
+        RX packets 6052  bytes 255776 (249.7 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 11480  bytes 27172511 (25.9 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s3: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::a00:27ff:fea4:75cd  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:a4:75:cd  txqueuelen 1000  (Ethernet)
+        RX packets 19325  bytes 27611099 (26.3 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 6352  bytes 403415 (393.9 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+enp0s8: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.56.102  netmask 255.255.255.0  broadcast 192.168.56.255
+        inet6 fe80::8a60:fb2e:9ff7:740b  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:c5:fb:5c  txqueuelen 1000  (Ethernet)
+        RX packets 4094  bytes 372903 (364.1 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 2768  bytes 468295 (457.3 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 32  bytes 2592 (2.5 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 32  bytes 2592 (2.5 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+veth487a2e0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet6 fe80::d48c:1fff:fedf:c8db  prefixlen 64  scopeid 0x20<link>
+        ether d6:8c:1f:df:c8:db  txqueuelen 0  (Ethernet)
+        RX packets 491  bytes 62927 (61.4 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 525  bytes 436841 (426.6 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+vethb2d9cfe: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet6 fe80::ca1:4ff:fe67:4ef1  prefixlen 64  scopeid 0x20<link>
+        ether 0e:a1:04:67:4e:f1  txqueuelen 0  (Ethernet)
+        RX packets 438  bytes 56465 (55.1 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 500  bytes 359179 (350.7 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+vethc4b5530: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet6 fe80::b0ed:2cff:feeb:6587  prefixlen 64  scopeid 0x20<link>
+        ether b2:ed:2c:eb:65:87  txqueuelen 0  (Ethernet)
+        RX packets 475  bytes 61075 (59.6 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 587  bytes 366221 (357.6 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+vethefbff61: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet6 fe80::e41a:75ff:fe06:34d8  prefixlen 64  scopeid 0x20<link>
+        ether e6:1a:75:06:34:d8  txqueuelen 0  (Ethernet)
+        RX packets 652  bytes 89651 (87.5 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 735  bytes 539183 (526.5 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+2019-07-20 19:08:02,456 p=7926 u=ansible |   [WARNING]: Platform linux on host node is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:08:02,458 p=7926 u=ansible |  node | FAILED | rc=2 >>
+[Errno 2] No such file or directory
+
+2019-07-20 19:08:03,147 p=7926 u=ansible |   [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:08:03,148 p=7926 u=ansible |  node1 | FAILED | rc=2 >>
+[Errno 2] No such file or directory
+
+2019-07-20 19:08:03,262 p=7926 u=ansible |   [WARNING]: Platform linux on host lb is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:08:03,287 p=7926 u=ansible |  lb | FAILED | rc=2 >>
+[Errno 2] No such file or directory
+
+2019-07-20 19:08:03,307 p=7926 u=ansible |   [WARNING]: Platform linux on host db is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:08:03,315 p=7926 u=ansible |  db | FAILED | rc=2 >>
+[Errno 2] No such file or directory
+
+2019-07-20 19:10:02,666 p=8105 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-20 19:10:02,672 p=8105 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-20 19:10:21,095 p=8105 u=ansible |  localhost | CHANGED | rc=0 >>
+ansible
+
+2019-07-20 19:10:23,647 p=8105 u=ansible |   [WARNING]: Platform linux on host db is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:10:23,667 p=8105 u=ansible |  db | CHANGED | rc=0 >>
+master
+
+2019-07-20 19:10:25,806 p=8105 u=ansible |   [WARNING]: Platform linux on host node is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:10:25,828 p=8105 u=ansible |  node | CHANGED | rc=0 >>
+master
+
+2019-07-20 19:10:25,885 p=8105 u=ansible |   [WARNING]: Platform linux on host lb is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:10:25,888 p=8105 u=ansible |  lb | CHANGED | rc=0 >>
+master
+
+2019-07-20 19:10:25,906 p=8105 u=ansible |   [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:10:25,918 p=8105 u=ansible |  node1 | CHANGED | rc=0 >>
+master
+
+2019-07-20 19:14:56,931 p=8337 u=ansible |   [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2019-07-20 19:15:21,437 p=8346 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-20 19:15:21,441 p=8346 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-20 19:15:40,210 p=8346 u=ansible |  localhost | CHANGED | rc=0 >>
+ansible
+
+2019-07-20 19:15:45,139 p=8346 u=ansible |   [WARNING]: Platform linux on host node is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:15:45,148 p=8346 u=ansible |  node | CHANGED | rc=0 >>
+master
+
+2019-07-20 19:15:45,851 p=8346 u=ansible |   [WARNING]: Platform linux on host lb is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:15:45,876 p=8346 u=ansible |  lb | CHANGED | rc=0 >>
+master
+
+2019-07-20 19:15:45,938 p=8346 u=ansible |   [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:15:45,939 p=8346 u=ansible |  node1 | CHANGED | rc=0 >>
+master
+
+2019-07-20 19:15:45,957 p=8346 u=ansible |   [WARNING]: Platform linux on host db is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:15:45,968 p=8346 u=ansible |  db | CHANGED | rc=0 >>
+master
+
+2019-07-20 19:17:54,509 p=8555 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-20 19:17:54,514 p=8555 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-20 19:18:12,786 p=8555 u=ansible |  localhost | CHANGED | rc=0 >>
+ 19:18:12 up  1:26,  5 users,  load average: 2.11, 1.15, 0.78
+
+2019-07-20 19:18:15,682 p=8555 u=ansible |   [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:18:15,683 p=8555 u=ansible |  node1 | CHANGED | rc=0 >>
+ 18:18:14 up  1:26,  1 user,  load average: 2.11, 1.15, 0.78
+
+2019-07-20 19:18:17,813 p=8555 u=ansible |   [WARNING]: Platform linux on host db is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:18:17,815 p=8555 u=ansible |  db | CHANGED | rc=0 >>
+ 18:18:17 up  1:26,  1 user,  load average: 2.50, 1.25, 0.81
+
+2019-07-20 19:18:18,074 p=8555 u=ansible |   [WARNING]: Platform linux on host node is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:18:18,084 p=8555 u=ansible |  node | CHANGED | rc=0 >>
+ 18:18:17 up  1:26,  1 user,  load average: 2.50, 1.25, 0.81
+
+2019-07-20 19:18:18,129 p=8555 u=ansible |   [WARNING]: Platform linux on host lb is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:18:18,132 p=8555 u=ansible |  lb | CHANGED | rc=0 >>
+ 18:18:17 up  1:26,  1 user,  load average: 2.50, 1.25, 0.81
+
+2019-07-20 19:22:45,748 p=8787 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-20 19:22:45,752 p=8787 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-20 19:22:56,467 p=8787 u=ansible |   [WARNING]: Platform linux on host node is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:22:56,483 p=8787 u=ansible |  node | CHANGED | rc=0 >>
+ 18:22:56 up  1:30,  1 user,  load average: 0.91, 0.89, 0.78
+
+2019-07-20 19:23:00,148 p=8787 u=ansible |   [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:23:00,150 p=8787 u=ansible |  node1 | CHANGED | rc=0 >>
+ 18:22:59 up  1:30,  1 user,  load average: 0.91, 0.89, 0.78
+
+2019-07-20 19:23:03,551 p=8787 u=ansible |   [WARNING]: Platform linux on host lb is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:23:03,554 p=8787 u=ansible |  lb | CHANGED | rc=0 >>
+ 18:23:03 up  1:30,  1 user,  load average: 1.24, 0.96, 0.80
+
+2019-07-20 19:23:07,230 p=8787 u=ansible |   [WARNING]: Platform linux on host db is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:23:07,232 p=8787 u=ansible |  db | CHANGED | rc=0 >>
+ 18:23:06 up  1:31,  1 user,  load average: 1.38, 0.99, 0.81
+
+2019-07-20 19:23:09,474 p=8787 u=ansible |  localhost | CHANGED | rc=0 >>
+ 19:23:09 up  1:31,  5 users,  load average: 1.38, 0.99, 0.81
+
+2019-07-20 19:26:41,724 p=8997 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-20 19:26:41,726 p=8997 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-20 19:26:51,653 p=8997 u=ansible |   [WARNING]: Platform linux on host node is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:26:51,658 p=8997 u=ansible |  node | CHANGED | rc=0 >>
+ 18:26:51 up  1:34,  1 user,  load average: 0.68, 0.72, 0.73
+
+2019-07-20 19:26:55,205 p=8997 u=ansible |   [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:26:55,211 p=8997 u=ansible |  node1 | CHANGED | rc=0 >>
+ 18:26:54 up  1:34,  1 user,  load average: 0.68, 0.72, 0.73
+
+2019-07-20 19:26:59,065 p=8997 u=ansible |   [WARNING]: Platform linux on host lb is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:26:59,075 p=8997 u=ansible |  lb | CHANGED | rc=0 >>
+ 18:26:58 up  1:34,  1 user,  load average: 1.19, 0.82, 0.77
+
+2019-07-20 19:27:02,707 p=8997 u=ansible |   [WARNING]: Platform linux on host db is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:27:02,718 p=8997 u=ansible |  db | CHANGED | rc=0 >>
+ 18:27:02 up  1:34,  1 user,  load average: 1.33, 0.86, 0.78
+
+2019-07-20 19:27:05,045 p=8997 u=ansible |  localhost | CHANGED | rc=0 >>
+ 19:27:04 up  1:35,  5 users,  load average: 1.33, 0.86, 0.78
+

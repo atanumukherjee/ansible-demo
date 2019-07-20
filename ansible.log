@@ -3576,3 +3576,33 @@ handlers:
 2016-08-10 16:00:16,550 p=2824 u=ansible |  10.0.2.18                  : ok=0    changed=0    unreachable=0    failed=1   
 2016-08-10 16:00:26,625 p=2844 u=ansible |  ERROR! the playbook: apache could not be found
 2016-08-10 16:01:04,852 p=2868 u=ansible |  ERROR! the playbook: apache could not be found
+2019-07-19 20:19:22,149 p=19020 u=ansible |   [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2019-07-19 20:19:22,159 p=19020 u=ansible |   [WARNING]: Could not match supplied host pattern, ignoring: node1
+
+2019-07-19 20:21:50,549 p=19032 u=ansible |   [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2019-07-19 20:21:50,569 p=19032 u=ansible |   [WARNING]: Could not match supplied host pattern, ignoring: node1
+
+2019-07-19 20:27:06,977 p=19044 u=ansible |   [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2019-07-19 20:27:06,985 p=19044 u=ansible |   [WARNING]: Could not match supplied host pattern, ignoring: node1
+
+2019-07-19 20:27:53,515 p=19078 u=ansible |  node1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Warning: Permanently added 'node1,172.20.0.4' (ECDSA) to the list of known hosts.\r\nPermission denied (publickey,password).", 
+    "unreachable": true
+}
+2019-07-19 20:37:19,560 p=19134 u=ansible |  node1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2019-07-19 20:41:15,155 p=19219 u=ansible |  node1 | UNREACHABLE! => {
+    "changed": false, 
+    "msg": "Failed to connect to the host via ssh: Permission denied (publickey,password).", 
+    "unreachable": true
+}
+2019-07-19 20:42:56,320 p=19248 u=ansible |  ERROR! Extraneous options or arguments
+2019-07-19 20:43:11,568 p=19253 u=ansible |   [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
