@@ -778,3 +778,509 @@ https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.
 2019-07-20 19:27:05,045 p=8997 u=ansible |  localhost | CHANGED | rc=0 >>
  19:27:04 up  1:35,  5 users,  load average: 1.33, 0.86, 0.78
 
+2019-07-20 19:47:56,257 p=9336 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-20 19:47:56,262 p=9336 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-20 19:48:06,653 p=9336 u=ansible |   [WARNING]: Platform linux on host node is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:48:06,656 p=9336 u=ansible |  node | CHANGED | rc=0 >>
+ 18:48:06 up  1:56,  1 user,  load average: 0.68, 0.25, 0.38
+
+2019-07-20 19:48:09,989 p=9336 u=ansible |   [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:48:10,014 p=9336 u=ansible |  node1 | CHANGED | rc=0 >>
+ 18:48:09 up  1:56,  1 user,  load average: 0.68, 0.25, 0.38
+
+2019-07-20 19:48:13,308 p=9336 u=ansible |   [WARNING]: Platform linux on host lb is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:48:13,311 p=9336 u=ansible |  lb | CHANGED | rc=0 >>
+ 18:48:12 up  1:56,  1 user,  load average: 0.87, 0.30, 0.40
+
+2019-07-20 19:48:17,279 p=9336 u=ansible |   [WARNING]: Platform linux on host db is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 19:48:17,284 p=9336 u=ansible |  db | CHANGED | rc=0 >>
+ 18:48:16 up  1:56,  1 user,  load average: 1.04, 0.34, 0.41
+
+2019-07-20 19:48:19,444 p=9336 u=ansible |  localhost | CHANGED | rc=0 >>
+ 19:48:19 up  1:56,  5 users,  load average: 1.04, 0.34, 0.41
+
+2019-07-20 20:03:27,551 p=9587 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-20 20:03:27,558 p=9587 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-20 20:03:36,666 p=9587 u=ansible |   [WARNING]: Platform linux on host node is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 20:03:36,681 p=9587 u=ansible |  node | CHANGED | rc=0 >>
+ 19:03:36 up  2:11,  1 user,  load average: 0.50, 0.22, 0.29
+
+2019-07-20 20:03:39,619 p=9587 u=ansible |   [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 20:03:39,625 p=9587 u=ansible |  node1 | CHANGED | rc=0 >>
+ 19:03:39 up  2:11,  1 user,  load average: 0.50, 0.22, 0.29
+
+2019-07-20 20:03:43,102 p=9587 u=ansible |   [WARNING]: Platform linux on host lb is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 20:03:43,105 p=9587 u=ansible |  lb | CHANGED | rc=0 >>
+ 19:03:42 up  2:11,  1 user,  load average: 0.70, 0.26, 0.31
+
+2019-07-20 20:03:46,108 p=9587 u=ansible |   [WARNING]: Platform linux on host db is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 20:03:46,119 p=9587 u=ansible |  db | CHANGED | rc=0 >>
+ 19:03:45 up  2:11,  1 user,  load average: 0.70, 0.26, 0.31
+
+2019-07-20 20:03:48,043 p=9587 u=ansible |  localhost | CHANGED | rc=0 >>
+ 20:03:47 up  2:11,  5 users,  load average: 0.88, 0.31, 0.32
+
+2019-07-20 20:09:26,907 p=9822 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-20 20:09:26,909 p=9822 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-20 20:09:35,457 p=9822 u=ansible |   [WARNING]: Platform linux on host node is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 20:09:35,459 p=9822 u=ansible |  node | CHANGED | rc=0 >>
+ 19:09:35 up  2:17,  1 user,  load average: 0.40, 0.25, 0.29
+
+2019-07-20 20:09:38,355 p=9822 u=ansible |   [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 20:09:38,368 p=9822 u=ansible |  node1 | CHANGED | rc=0 >>
+ 19:09:38 up  2:17,  1 user,  load average: 0.53, 0.28, 0.30
+
+2019-07-20 20:09:41,232 p=9822 u=ansible |   [WARNING]: Platform linux on host lb is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 20:09:41,235 p=9822 u=ansible |  lb | CHANGED | rc=0 >>
+ 19:09:40 up  2:17,  1 user,  load average: 0.53, 0.28, 0.30
+
+2019-07-20 20:09:44,322 p=9822 u=ansible |   [WARNING]: Platform linux on host db is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-20 20:09:44,325 p=9822 u=ansible |  db | CHANGED | rc=0 >>
+ 19:09:43 up  2:17,  1 user,  load average: 0.80, 0.34, 0.32
+
+2019-07-20 20:09:46,236 p=9822 u=ansible |  localhost | CHANGED | rc=0 >>
+ 20:09:46 up  2:17,  5 users,  load average: 0.80, 0.34, 0.32
+
+2019-07-22 11:43:54,127 p=2894 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-22 11:43:54,145 p=2894 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-22 11:44:16,034 p=2894 u=ansible |   [WARNING]: Platform linux on host node is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 11:44:16,045 p=2894 u=ansible |  node | CHANGED | rc=0 >>
+master
+
+2019-07-22 11:44:19,018 p=2894 u=ansible |   [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 11:44:19,032 p=2894 u=ansible |  node1 | CHANGED | rc=0 >>
+master
+
+2019-07-22 11:44:22,167 p=2894 u=ansible |   [WARNING]: Platform linux on host lb is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 11:44:22,170 p=2894 u=ansible |  lb | CHANGED | rc=0 >>
+master
+
+2019-07-22 11:44:25,345 p=2894 u=ansible |   [WARNING]: Platform linux on host db is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 11:44:25,371 p=2894 u=ansible |  db | CHANGED | rc=0 >>
+master
+
+2019-07-22 11:44:27,633 p=2894 u=ansible |  localhost | CHANGED | rc=0 >>
+ansible
+
+2019-07-22 11:44:51,079 p=3102 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-22 11:44:51,084 p=3102 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-22 11:44:59,861 p=3102 u=ansible |   [WARNING]: Platform linux on host node is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 11:44:59,873 p=3102 u=ansible |  node | CHANGED | rc=0 >>
+ 10:44:59 up 14 min,  1 user,  load average: 0.99, 0.64, 0.55
+
+2019-07-22 11:45:02,720 p=3102 u=ansible |   [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 11:45:02,724 p=3102 u=ansible |  node1 | CHANGED | rc=0 >>
+ 10:45:02 up 14 min,  1 user,  load average: 1.07, 0.66, 0.56
+
+2019-07-22 11:45:05,527 p=3102 u=ansible |   [WARNING]: Platform linux on host lb is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 11:45:05,538 p=3102 u=ansible |  lb | CHANGED | rc=0 >>
+ 10:45:05 up 14 min,  1 user,  load average: 1.23, 0.70, 0.57
+
+2019-07-22 11:45:08,466 p=3102 u=ansible |   [WARNING]: Platform linux on host db is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 11:45:08,468 p=3102 u=ansible |  db | CHANGED | rc=0 >>
+ 10:45:08 up 14 min,  1 user,  load average: 1.23, 0.70, 0.57
+
+2019-07-22 11:45:11,242 p=3102 u=ansible |  localhost | CHANGED | rc=0 >>
+ 11:45:10 up 14 min,  2 users,  load average: 1.37, 0.74, 0.59
+
+2019-07-22 11:46:30,941 p=3286 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-22 11:46:30,943 p=3286 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-22 11:46:39,637 p=3286 u=ansible |   [WARNING]: Platform linux on host node is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 11:46:39,639 p=3286 u=ansible |  node | CHANGED | rc=0 >>
+              total        used        free      shared  buff/cache   available
+Mem:        1015476      286048      255424        7272      474004      576008
+Swap:       2097148           0     2097148
+
+2019-07-22 11:46:42,536 p=3286 u=ansible |   [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 11:46:42,538 p=3286 u=ansible |  node1 | CHANGED | rc=0 >>
+              total        used        free      shared  buff/cache   available
+Mem:        1015476      286684      254784        7272      474008      575388
+Swap:       2097148           0     2097148
+
+2019-07-22 11:46:45,445 p=3286 u=ansible |   [WARNING]: Platform linux on host lb is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 11:46:45,447 p=3286 u=ansible |  lb | CHANGED | rc=0 >>
+              total        used        free      shared  buff/cache   available
+Mem:        1015476      290244      251184        7272      474048      571820
+Swap:       2097148           0     2097148
+
+2019-07-22 11:46:48,346 p=3286 u=ansible |   [WARNING]: Platform linux on host db is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 11:46:48,348 p=3286 u=ansible |  db | CHANGED | rc=0 >>
+              total        used        free      shared  buff/cache   available
+Mem:        1015476      293716      247700        7272      474060      568376
+Swap:       2097148           0     2097148
+
+2019-07-22 11:46:50,499 p=3286 u=ansible |  localhost | CHANGED | rc=0 >>
+              total        used        free      shared  buff/cache   available
+Mem:        1015476      270688      249736        7272      495052      570416
+Swap:       2097148           0     2097148
+
+2019-07-22 11:53:54,630 p=3523 u=ansible |  ERROR! Extraneous options or arguments
+2019-07-22 11:54:51,334 p=3529 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-22 11:54:51,339 p=3529 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-22 11:55:07,550 p=3529 u=ansible |   [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 11:55:07,558 p=3529 u=ansible |  node1 | CHANGED => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": true, 
+    "checksum": "da39a3ee5e6b4b0d3255bfef95601890afd80709", 
+    "dest": "/tmp/test.txt", 
+    "gid": 1000, 
+    "group": "master", 
+    "md5sum": "d41d8cd98f00b204e9800998ecf8427e", 
+    "mode": "0644", 
+    "owner": "master", 
+    "size": 0, 
+    "src": "/home/master/.ansible/tmp/ansible-tmp-1563792895.32-237508631770902/source", 
+    "state": "file", 
+    "uid": 1000
+}
+2019-07-22 11:55:07,605 p=3529 u=ansible |   [WARNING]: Platform linux on host node is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 11:55:07,621 p=3529 u=ansible |  node | CHANGED => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": true, 
+    "checksum": "da39a3ee5e6b4b0d3255bfef95601890afd80709", 
+    "dest": "/tmp/test.txt", 
+    "gid": 1000, 
+    "group": "master", 
+    "md5sum": "d41d8cd98f00b204e9800998ecf8427e", 
+    "mode": "0644", 
+    "owner": "master", 
+    "size": 0, 
+    "src": "/home/master/.ansible/tmp/ansible-tmp-1563792895.21-113300140175486/source", 
+    "state": "file", 
+    "uid": 1000
+}
+2019-07-22 11:56:42,488 p=3671 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-22 11:56:42,491 p=3671 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-22 11:57:00,126 p=3671 u=ansible |   [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 11:57:00,202 p=3671 u=ansible |  node1 | CHANGED => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": true, 
+    "checksum": "21a37ae73da17d77920c5beeb9598c04b23c4efc", 
+    "dest": "/tmp/test.txt", 
+    "gid": 1000, 
+    "group": "master", 
+    "md5sum": "7359b82bbbbb9576dfc3b72f769689c9", 
+    "mode": "0644", 
+    "owner": "master", 
+    "size": 26, 
+    "src": "/home/master/.ansible/tmp/ansible-tmp-1563793006.74-228086352296084/source", 
+    "state": "file", 
+    "uid": 1000
+}
+2019-07-22 11:57:00,221 p=3671 u=ansible |   [WARNING]: Platform linux on host node is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 11:57:00,233 p=3671 u=ansible |  node | CHANGED => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": true, 
+    "checksum": "21a37ae73da17d77920c5beeb9598c04b23c4efc", 
+    "dest": "/tmp/test.txt", 
+    "gid": 1000, 
+    "group": "master", 
+    "md5sum": "7359b82bbbbb9576dfc3b72f769689c9", 
+    "mode": "0644", 
+    "owner": "master", 
+    "size": 26, 
+    "src": "/home/master/.ansible/tmp/ansible-tmp-1563793006.63-82253924603967/source", 
+    "state": "file", 
+    "uid": 1000
+}
+2019-07-22 16:02:24,985 p=4636 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-22 16:02:24,987 p=4636 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-22 16:02:37,537 p=4636 u=ansible |   [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 16:02:37,542 p=4636 u=ansible |  node1 | FAILED! => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "msg": "groupadd: Permission denied.\ngroupadd: cannot lock /etc/group; try again later.\n", 
+    "name": "admin"
+}
+2019-07-22 16:02:37,565 p=4636 u=ansible |   [WARNING]: Platform linux on host node is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 16:02:37,575 p=4636 u=ansible |  node | FAILED! => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "msg": "groupadd: Permission denied.\ngroupadd: cannot lock /etc/group; try again later.\n", 
+    "name": "admin"
+}
+2019-07-22 16:05:46,149 p=4735 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-22 16:05:46,152 p=4735 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-22 16:05:55,062 p=4735 u=ansible |   [WARNING]: Platform linux on host node is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 16:05:55,064 p=4735 u=ansible |  node | FAILED | rc=2 >>
+[Errno 2] No such file or directory
+
+2019-07-22 16:05:57,927 p=4735 u=ansible |   [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 16:05:57,942 p=4735 u=ansible |  node1 | FAILED | rc=2 >>
+[Errno 2] No such file or directory
+
+2019-07-22 16:06:00,768 p=4735 u=ansible |   [WARNING]: Platform linux on host lb is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 16:06:00,770 p=4735 u=ansible |  lb | FAILED | rc=2 >>
+[Errno 2] No such file or directory
+
+2019-07-22 16:06:03,818 p=4735 u=ansible |   [WARNING]: Platform linux on host db is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 16:06:03,860 p=4735 u=ansible |  db | FAILED | rc=2 >>
+[Errno 2] No such file or directory
+
+2019-07-22 16:06:05,895 p=4735 u=ansible |  localhost | FAILED | rc=13 >>
+[Errno 13] Permission denied
+
+2019-07-22 16:10:44,328 p=5028 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-22 16:10:44,334 p=5028 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-22 16:10:56,514 p=5028 u=ansible |   [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 16:10:56,533 p=5028 u=ansible |  node1 | FAILED! => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "msg": "groupadd: Permission denied.\ngroupadd: cannot lock /etc/group; try again later.\n", 
+    "name": "admin"
+}
+2019-07-22 16:10:56,558 p=5028 u=ansible |   [WARNING]: Platform linux on host node is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 16:10:56,563 p=5028 u=ansible |  node | FAILED! => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "msg": "groupadd: Permission denied.\ngroupadd: cannot lock /etc/group; try again later.\n", 
+    "name": "admin"
+}
+2019-07-22 16:16:00,969 p=5162 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-22 16:16:00,972 p=5162 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-22 16:16:12,495 p=5162 u=ansible |   [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 16:16:12,499 p=5162 u=ansible |  node1 | FAILED! => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "msg": "groupadd: Permission denied.\ngroupadd: cannot lock /etc/group; try again later.\n", 
+    "name": "admin"
+}
+2019-07-22 16:16:12,585 p=5162 u=ansible |   [WARNING]: Platform linux on host node is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 16:16:12,587 p=5162 u=ansible |  node | FAILED! => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "msg": "groupadd: Permission denied.\ngroupadd: cannot lock /etc/group; try again later.\n", 
+    "name": "admin"
+}
+2019-07-22 16:18:44,331 p=5260 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-22 16:18:44,333 p=5260 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-22 16:18:57,774 p=5260 u=ansible |   [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 16:18:57,783 p=5260 u=ansible |  node1 | FAILED! => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "msg": "groupadd: Permission denied.\ngroupadd: cannot lock /etc/group; try again later.\n", 
+    "name": "admin"
+}
+2019-07-22 16:18:57,803 p=5260 u=ansible |   [WARNING]: Platform linux on host node is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 16:18:57,809 p=5260 u=ansible |  node | FAILED! => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "msg": "groupadd: Permission denied.\ngroupadd: cannot lock /etc/group; try again later.\n", 
+    "name": "admin"
+}
+2019-07-22 16:21:37,890 p=5359 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-22 16:21:37,899 p=5359 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-22 16:21:51,653 p=5359 u=ansible |   [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 16:21:51,688 p=5359 u=ansible |  node1 | FAILED! => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "msg": "groupadd: Permission denied.\ngroupadd: cannot lock /etc/group; try again later.\n", 
+    "name": "admin"
+}
+2019-07-22 16:21:51,729 p=5359 u=ansible |   [WARNING]: Platform linux on host node is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 16:21:51,748 p=5359 u=ansible |  node | FAILED! => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "msg": "groupadd: Permission denied.\ngroupadd: cannot lock /etc/group; try again later.\n", 
+    "name": "admin"
+}
+2019-07-22 16:28:33,494 p=5543 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-22 16:28:33,497 p=5543 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-22 16:28:43,773 p=5543 u=ansible |   [WARNING]: Platform linux on host node is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 16:28:43,778 p=5543 u=ansible |  node | FAILED! => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "module_stderr": "Shared connection to node closed.\r\n", 
+    "module_stdout": "\r\nWe trust you have received the usual lecture from the local System\r\nAdministrator. It usually boils down to these three things:\r\n\r\n    #1) Respect the privacy of others.\r\n    #2) Think before you type.\r\n    #3) With great power comes great responsibility.\r\n\r\n\r\n", 
+    "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", 
+    "rc": 1
+}
+2019-07-22 16:28:44,286 p=5543 u=ansible |   [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 16:28:44,306 p=5543 u=ansible |  node1 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "gid": 1001, 
+    "name": "admin", 
+    "state": "present", 
+    "system": false
+}
+2019-07-22 16:30:42,088 p=5766 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-22 16:30:42,089 p=5766 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-22 16:30:53,772 p=5766 u=ansible |   [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 16:30:53,780 p=5766 u=ansible |  node1 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": false, 
+    "gid": 1001, 
+    "name": "admin", 
+    "state": "present", 
+    "system": false
+}
+2019-07-22 16:30:54,475 p=5766 u=ansible |   [WARNING]: Platform linux on host node is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-22 16:30:54,481 p=5766 u=ansible |  node | CHANGED => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python"
+    }, 
+    "changed": true, 
+    "gid": 1001, 
+    "name": "admin", 
+    "state": "present", 
+    "system": false
+}
