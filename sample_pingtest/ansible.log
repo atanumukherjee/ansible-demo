@@ -1284,3 +1284,224 @@ https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.
     "state": "present", 
     "system": false
 }
+2019-07-25 14:58:04,503 p=2854 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-25 14:58:04,516 p=2854 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-25 14:58:25,840 p=2854 u=ansible |   [WARNING]: Platform linux on host node is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-25 14:58:25,842 p=2854 u=ansible |  node | CHANGED | rc=0 >>
+              total        used        free      shared  buff/cache   available
+Mem:        1015476      283052      299120        7272      433304      579784
+Swap:       2097148           0     2097148
+
+2019-07-25 14:58:29,014 p=2854 u=ansible |   [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-25 14:58:29,015 p=2854 u=ansible |  node1 | CHANGED | rc=0 >>
+              total        used        free      shared  buff/cache   available
+Mem:        1015476      283808      287816        7272      443852      578812
+Swap:       2097148           0     2097148
+
+2019-07-25 14:58:32,300 p=2854 u=ansible |   [WARNING]: Platform linux on host lb is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-25 14:58:32,302 p=2854 u=ansible |  lb | CHANGED | rc=0 >>
+              total        used        free      shared  buff/cache   available
+Mem:        1015476      287684      274612        7272      453180      574668
+Swap:       2097148           0     2097148
+
+2019-07-25 14:58:35,919 p=2854 u=ansible |   [WARNING]: Platform linux on host db is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-25 14:58:35,921 p=2854 u=ansible |  db | CHANGED | rc=0 >>
+              total        used        free      shared  buff/cache   available
+Mem:        1015476      291616      261988        7272      461872      570516
+Swap:       2097148           0     2097148
+
+2019-07-25 14:58:37,844 p=2854 u=ansible |  localhost | CHANGED | rc=0 >>
+              total        used        free      shared  buff/cache   available
+Mem:        1015476      268308      263740        7272      483428      572688
+Swap:       2097148           0     2097148
+
+2019-07-25 14:58:52,008 p=3063 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-25 14:58:52,013 p=3063 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-25 14:59:01,110 p=3063 u=ansible |   [WARNING]: Platform linux on host node is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-25 14:59:01,112 p=3063 u=ansible |  node | FAILED | rc=2 >>
+[Errno 2] No such file or directory
+
+2019-07-25 14:59:03,773 p=3063 u=ansible |   [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-25 14:59:03,776 p=3063 u=ansible |  node1 | FAILED | rc=2 >>
+[Errno 2] No such file or directory
+
+2019-07-25 14:59:06,181 p=3063 u=ansible |   [WARNING]: Platform linux on host lb is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-25 14:59:06,191 p=3063 u=ansible |  lb | FAILED | rc=2 >>
+[Errno 2] No such file or directory
+
+2019-07-25 14:59:09,131 p=3063 u=ansible |   [WARNING]: Platform linux on host db is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-25 14:59:09,134 p=3063 u=ansible |  db | FAILED | rc=2 >>
+[Errno 2] No such file or directory
+
+2019-07-25 14:59:10,836 p=3063 u=ansible |  localhost | FAILED | rc=2 >>
+[Errno 2] No such file or directory
+
+2019-07-25 14:59:22,471 p=3266 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-25 14:59:22,473 p=3266 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-25 14:59:31,704 p=3266 u=ansible |   [WARNING]: Platform linux on host node is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-25 14:59:31,707 p=3266 u=ansible |  node | CHANGED | rc=0 >>
+node
+
+2019-07-25 14:59:34,496 p=3266 u=ansible |   [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-25 14:59:34,501 p=3266 u=ansible |  node1 | CHANGED | rc=0 >>
+node1
+
+2019-07-25 14:59:37,482 p=3266 u=ansible |   [WARNING]: Platform linux on host lb is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-25 14:59:37,497 p=3266 u=ansible |  lb | CHANGED | rc=0 >>
+lb
+
+2019-07-25 14:59:40,226 p=3266 u=ansible |   [WARNING]: Platform linux on host db is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-25 14:59:40,228 p=3266 u=ansible |  db | CHANGED | rc=0 >>
+db
+
+2019-07-25 14:59:42,228 p=3266 u=ansible |  localhost | CHANGED | rc=0 >>
+ansible-devops
+
+2019-07-25 14:59:53,926 p=3450 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-25 14:59:53,929 p=3450 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-25 15:00:02,109 p=3450 u=ansible |   [WARNING]: Platform linux on host node is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-25 15:00:02,112 p=3450 u=ansible |  node | CHANGED | rc=0 >>
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+14: eth0@if15: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether 02:42:ac:14:01:04 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 172.20.1.4/16 brd 172.20.255.255 scope global eth0
+       valid_lft forever preferred_lft forever
+
+2019-07-25 15:00:04,749 p=3450 u=ansible |   [WARNING]: Platform linux on host node1 is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-25 15:00:04,752 p=3450 u=ansible |  node1 | CHANGED | rc=0 >>
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+10: eth0@if11: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether 02:42:ac:14:01:05 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 172.20.1.5/16 brd 172.20.255.255 scope global eth0
+       valid_lft forever preferred_lft forever
+
+2019-07-25 15:00:07,506 p=3450 u=ansible |   [WARNING]: Platform linux on host lb is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-25 15:00:07,514 p=3450 u=ansible |  lb | CHANGED | rc=0 >>
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+12: eth0@if13: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether 02:42:ac:14:01:02 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 172.20.1.2/16 brd 172.20.255.255 scope global eth0
+       valid_lft forever preferred_lft forever
+
+2019-07-25 15:00:10,039 p=3450 u=ansible |   [WARNING]: Platform linux on host db is using the discovered Python interpreter at /usr/bin/python, but future installation of another Python interpreter could change this. See
+https://docs.ansible.com/ansible/2.8/reference_appendices/interpreter_discovery.html for more information.
+
+2019-07-25 15:00:10,041 p=3450 u=ansible |  db | CHANGED | rc=0 >>
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+16: eth0@if17: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether 02:42:ac:14:01:03 brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 172.20.1.3/16 brd 172.20.255.255 scope global eth0
+       valid_lft forever preferred_lft forever
+
+2019-07-25 15:00:11,817 p=3450 u=ansible |  localhost | CHANGED | rc=0 >>
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:a4:75:cd brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global noprefixroute dynamic enp0s3
+       valid_lft 83124sec preferred_lft 83124sec
+    inet6 fe80::a00:27ff:fea4:75cd/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+3: enp0s8: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:c5:fb:5c brd ff:ff:ff:ff:ff:ff
+    inet 192.168.56.102/24 brd 192.168.56.255 scope global noprefixroute dynamic enp0s8
+       valid_lft 1137sec preferred_lft 1137sec
+    inet6 fe80::8a60:fb2e:9ff7:740b/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+4: br-81531a1012fe: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:a1:4b:1a:eb brd ff:ff:ff:ff:ff:ff
+    inet 192.168.61.1/24 brd 192.168.61.255 scope global br-81531a1012fe
+       valid_lft forever preferred_lft forever
+5: br-07c927bfddd7: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:28:f3:a1:34 brd ff:ff:ff:ff:ff:ff
+    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-07c927bfddd7
+       valid_lft forever preferred_lft forever
+6: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:1f:c9:07:c4 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+7: br-2e8c881cde2d: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:3f:d0:92:9d brd ff:ff:ff:ff:ff:ff
+    inet 172.19.0.1/16 brd 172.19.255.255 scope global br-2e8c881cde2d
+       valid_lft forever preferred_lft forever
+8: br-326406a9daa6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether 02:42:d6:5b:9c:fc brd ff:ff:ff:ff:ff:ff
+    inet 172.20.0.1/16 brd 172.20.255.255 scope global br-326406a9daa6
+       valid_lft forever preferred_lft forever
+    inet6 fe80::42:d6ff:fe5b:9cfc/64 scope link 
+       valid_lft forever preferred_lft forever
+9: br-6dc5dd576802: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:19:60:0a:16 brd ff:ff:ff:ff:ff:ff
+    inet 172.28.5.254/16 brd 172.28.255.255 scope global br-6dc5dd576802
+       valid_lft forever preferred_lft forever
+11: veth158ed6f@if10: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-326406a9daa6 state UP group default 
+    link/ether 62:0a:b4:0b:d6:1b brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet6 fe80::600a:b4ff:fe0b:d61b/64 scope link 
+       valid_lft forever preferred_lft forever
+13: veth3dcb97d@if12: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-326406a9daa6 state UP group default 
+    link/ether 2a:b7:2b:88:a4:e8 brd ff:ff:ff:ff:ff:ff link-netnsid 1
+    inet6 fe80::28b7:2bff:fe88:a4e8/64 scope link 
+       valid_lft forever preferred_lft forever
+15: vethed295c4@if14: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-326406a9daa6 state UP group default 
+    link/ether 66:ed:b2:1a:bf:f5 brd ff:ff:ff:ff:ff:ff link-netnsid 2
+    inet6 fe80::64ed:b2ff:fe1a:bff5/64 scope link 
+       valid_lft forever preferred_lft forever
+17: veth4beb3d4@if16: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-326406a9daa6 state UP group default 
+    link/ether 5a:bb:65:17:fc:e6 brd ff:ff:ff:ff:ff:ff link-netnsid 3
+    inet6 fe80::58bb:65ff:fe17:fce6/64 scope link 
+       valid_lft forever preferred_lft forever
+
