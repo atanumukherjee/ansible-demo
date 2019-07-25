@@ -1,0 +1,183 @@
+2019-07-25 20:27:13,537 p=4909 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-25 20:27:13,539 p=4909 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-25 20:27:18,640 p=4909 u=ansible |  PLAY [app] **********************************************************************************************
+2019-07-25 20:27:18,821 p=4909 u=ansible |  TASK [Gathering Facts] **********************************************************************************
+2019-07-25 20:27:27,778 p=4909 u=ansible |  fatal: [node1]: FAILED! => {"ansible_facts": {}, "changed": false, "msg": "The following modules failed to execute: setup\n  setup: MODULE FAILURE\nSee stdout/stderr for the exact error\n"}
+2019-07-25 20:27:27,786 p=4909 u=ansible |  fatal: [node]: FAILED! => {"ansible_facts": {}, "changed": false, "msg": "The following modules failed to execute: setup\n  setup: MODULE FAILURE\nSee stdout/stderr for the exact error\n"}
+2019-07-25 20:27:27,814 p=4909 u=ansible |  PLAY RECAP **********************************************************************************************
+2019-07-25 20:27:27,820 p=4909 u=ansible |  node                       : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-07-25 20:27:27,822 p=4909 u=ansible |  node1                      : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-07-25 20:27:53,349 p=4992 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-25 20:27:53,365 p=4992 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-25 20:27:57,831 p=4992 u=ansible |  PLAY [app] *******************************************************************************************************************************************************************************
+2019-07-25 20:27:57,936 p=4992 u=ansible |  TASK [Gathering Facts] *******************************************************************************************************************************************************************
+2019-07-25 20:28:04,970 p=4992 u=ansible |  fatal: [node1]: FAILED! => {"ansible_facts": {}, "changed": false, "msg": "The following modules failed to execute: setup\n  setup: MODULE FAILURE\nSee stdout/stderr for the exact error\n"}
+2019-07-25 20:28:05,000 p=4992 u=ansible |  fatal: [node]: FAILED! => {"ansible_facts": {}, "changed": false, "msg": "The following modules failed to execute: setup\n  setup: MODULE FAILURE\nSee stdout/stderr for the exact error\n"}
+2019-07-25 20:28:05,015 p=4992 u=ansible |  PLAY RECAP *******************************************************************************************************************************************************************************
+2019-07-25 20:28:05,016 p=4992 u=ansible |  node                       : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-07-25 20:28:05,019 p=4992 u=ansible |  node1                      : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-07-25 20:28:52,927 p=5063 u=ansible |  ansible-playbook 2.8.1
+  config file = /home/ansible/ansible-demo/sample_webapp/ansible.cfg
+  configured module search path = [u'/home/ansible/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python2.7/site-packages/ansible
+  executable location = /bin/ansible-playbook
+  python version = 2.7.5 (default, Jul 13 2018, 13:06:57) [GCC 4.8.5 20150623 (Red Hat 4.8.5-28)]
+2019-07-25 20:28:52,928 p=5063 u=ansible |  Using /home/ansible/ansible-demo/sample_webapp/ansible.cfg as config file
+2019-07-25 20:28:53,010 p=5063 u=ansible |  host_list declined parsing /home/ansible/ansible-demo/sample_webapp/hosts as it did not pass it's verify_file() method
+2019-07-25 20:28:53,012 p=5063 u=ansible |  script declined parsing /home/ansible/ansible-demo/sample_webapp/hosts as it did not pass it's verify_file() method
+2019-07-25 20:28:53,013 p=5063 u=ansible |  auto declined parsing /home/ansible/ansible-demo/sample_webapp/hosts as it did not pass it's verify_file() method
+2019-07-25 20:28:53,064 p=5063 u=ansible |  Parsed /home/ansible/ansible-demo/sample_webapp/hosts inventory source with ini plugin
+2019-07-25 20:28:53,074 p=5063 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-25 20:28:53,076 p=5063 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-25 20:28:54,510 p=5063 u=ansible |  statically imported: /home/ansible/ansible-demo/sample_webapp/roles/apache/tasks/install.yml
+2019-07-25 20:28:56,340 p=5063 u=ansible |  statically imported: /home/ansible/ansible-demo/sample_webapp/roles/apache/tasks/service.yml
+2019-07-25 20:28:57,148 p=5063 u=ansible |  PLAYBOOK: app.yml ************************************************************************************************************************************************************************
+2019-07-25 20:28:57,149 p=5063 u=ansible |  1 plays in app.yml
+2019-07-25 20:28:57,347 p=5063 u=ansible |  PLAY [app] *******************************************************************************************************************************************************************************
+2019-07-25 20:28:57,505 p=5063 u=ansible |  TASK [Gathering Facts] *******************************************************************************************************************************************************************
+2019-07-25 20:28:57,520 p=5063 u=ansible |  task path: /home/ansible/ansible-demo/sample_webapp/app.yml:2
+2019-07-25 20:28:57,670 p=5063 u=ansible |  <node> ESTABLISH SSH CONNECTION FOR USER: master
+2019-07-25 20:28:57,694 p=5063 u=ansible |  <node> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="master"' -o ConnectTimeout=10 -o ControlPath=/home/ansible/.ansible/cp/0f90f9be9b node '/bin/sh -c '"'"'echo ~master && sleep 0'"'"''
+2019-07-25 20:28:57,818 p=5063 u=ansible |  <node1> ESTABLISH SSH CONNECTION FOR USER: master
+2019-07-25 20:28:57,839 p=5063 u=ansible |  <node1> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="master"' -o ConnectTimeout=10 -o ControlPath=/home/ansible/.ansible/cp/a19474ea0c node1 '/bin/sh -c '"'"'echo ~master && sleep 0'"'"''
+2019-07-25 20:28:57,904 p=5063 u=ansible |  <node> (0, '/home/master\n', '')
+2019-07-25 20:28:57,906 p=5063 u=ansible |  <node> ESTABLISH SSH CONNECTION FOR USER: master
+2019-07-25 20:28:57,923 p=5063 u=ansible |  <node> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="master"' -o ConnectTimeout=10 -o ControlPath=/home/ansible/.ansible/cp/0f90f9be9b node '/bin/sh -c '"'"'( umask 77 && mkdir -p "` echo /home/master/.ansible/tmp/ansible-tmp-1564082937.67-66174094062897 `" && echo ansible-tmp-1564082937.67-66174094062897="` echo /home/master/.ansible/tmp/ansible-tmp-1564082937.67-66174094062897 `" ) && sleep 0'"'"''
+2019-07-25 20:28:58,060 p=5063 u=ansible |  <node1> (0, '/home/master\n', '')
+2019-07-25 20:28:58,064 p=5063 u=ansible |  <node1> ESTABLISH SSH CONNECTION FOR USER: master
+2019-07-25 20:28:58,079 p=5063 u=ansible |  <node1> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="master"' -o ConnectTimeout=10 -o ControlPath=/home/ansible/.ansible/cp/a19474ea0c node1 '/bin/sh -c '"'"'( umask 77 && mkdir -p "` echo /home/master/.ansible/tmp/ansible-tmp-1564082937.81-220677451569509 `" && echo ansible-tmp-1564082937.81-220677451569509="` echo /home/master/.ansible/tmp/ansible-tmp-1564082937.81-220677451569509 `" ) && sleep 0'"'"''
+2019-07-25 20:28:58,158 p=5063 u=ansible |  <node> (0, 'ansible-tmp-1564082937.67-66174094062897=/home/master/.ansible/tmp/ansible-tmp-1564082937.67-66174094062897\n', '')
+2019-07-25 20:28:58,289 p=5063 u=ansible |  <node1> (0, 'ansible-tmp-1564082937.81-220677451569509=/home/master/.ansible/tmp/ansible-tmp-1564082937.81-220677451569509\n', '')
+2019-07-25 20:29:03,399 p=5063 u=ansible |  <node1> Attempting python interpreter discovery
+2019-07-25 20:29:03,400 p=5063 u=ansible |  <node1> ESTABLISH SSH CONNECTION FOR USER: master
+2019-07-25 20:29:03,407 p=5063 u=ansible |  <node> Attempting python interpreter discovery
+2019-07-25 20:29:03,409 p=5063 u=ansible |  <node> ESTABLISH SSH CONNECTION FOR USER: master
+2019-07-25 20:29:03,426 p=5063 u=ansible |  <node> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="master"' -o ConnectTimeout=10 -o ControlPath=/home/ansible/.ansible/cp/0f90f9be9b node '/bin/sh -c '"'"'echo PLATFORM; uname; echo FOUND; command -v '"'"'"'"'"'"'"'"'/usr/bin/python'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.7'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.6'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.5'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python2.7'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python2.6'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'/usr/libexec/platform-python'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'/usr/bin/python3'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python'"'"'"'"'"'"'"'"'; echo ENDFOUND && sleep 0'"'"''
+2019-07-25 20:29:03,432 p=5063 u=ansible |  <node1> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="master"' -o ConnectTimeout=10 -o ControlPath=/home/ansible/.ansible/cp/a19474ea0c node1 '/bin/sh -c '"'"'echo PLATFORM; uname; echo FOUND; command -v '"'"'"'"'"'"'"'"'/usr/bin/python'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.7'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.6'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python3.5'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python2.7'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python2.6'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'/usr/libexec/platform-python'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'/usr/bin/python3'"'"'"'"'"'"'"'"'; command -v '"'"'"'"'"'"'"'"'python'"'"'"'"'"'"'"'"'; echo ENDFOUND && sleep 0'"'"''
+2019-07-25 20:29:03,616 p=5063 u=ansible |  <node1> (0, 'PLATFORM\nLinux\nFOUND\n/usr/bin/python\n/usr/bin/python2.7\n/usr/bin/python\nENDFOUND\n', '')
+2019-07-25 20:29:03,634 p=5063 u=ansible |  <node> (0, 'PLATFORM\nLinux\nFOUND\n/usr/bin/python\n/usr/bin/python2.7\n/usr/bin/python\nENDFOUND\n', '')
+2019-07-25 20:29:03,639 p=5063 u=ansible |  <node> ESTABLISH SSH CONNECTION FOR USER: master
+2019-07-25 20:29:03,624 p=5063 u=ansible |  <node1> ESTABLISH SSH CONNECTION FOR USER: master
+2019-07-25 20:29:03,659 p=5063 u=ansible |  <node1> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="master"' -o ConnectTimeout=10 -o ControlPath=/home/ansible/.ansible/cp/a19474ea0c node1 '/bin/sh -c '"'"'/usr/bin/python && sleep 0'"'"''
+2019-07-25 20:29:03,665 p=5063 u=ansible |  <node> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="master"' -o ConnectTimeout=10 -o ControlPath=/home/ansible/.ansible/cp/0f90f9be9b node '/bin/sh -c '"'"'/usr/bin/python && sleep 0'"'"''
+2019-07-25 20:29:04,173 p=5063 u=ansible |  <node1> (0, '{"osrelease_content": "PRETTY_NAME=\\"Debian GNU/Linux 9 (stretch)\\"\\nNAME=\\"Debian GNU/Linux\\"\\nVERSION_ID=\\"9\\"\\nVERSION=\\"9 (stretch)\\"\\nID=debian\\nHOME_URL=\\"https://www.debian.org/\\"\\nSUPPORT_URL=\\"https://www.debian.org/support\\"\\nBUG_REPORT_URL=\\"https://bugs.debian.org/\\"\\n", "platform_dist_result": ["debian", "9.5", ""]}\n', '')
+2019-07-25 20:29:04,178 p=5063 u=ansible |  <node1> Python interpreter discovery fallback (unsupported Linux distribution: debian)
+2019-07-25 20:29:04,199 p=5063 u=ansible |  <node> (0, '{"osrelease_content": "PRETTY_NAME=\\"Debian GNU/Linux 9 (stretch)\\"\\nNAME=\\"Debian GNU/Linux\\"\\nVERSION_ID=\\"9\\"\\nVERSION=\\"9 (stretch)\\"\\nID=debian\\nHOME_URL=\\"https://www.debian.org/\\"\\nSUPPORT_URL=\\"https://www.debian.org/support\\"\\nBUG_REPORT_URL=\\"https://bugs.debian.org/\\"\\n", "platform_dist_result": ["debian", "9.5", ""]}\n', '')
+2019-07-25 20:29:04,205 p=5063 u=ansible |  <node> Python interpreter discovery fallback (unsupported Linux distribution: debian)
+2019-07-25 20:29:04,262 p=5063 u=ansible |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/system/setup.py
+2019-07-25 20:29:04,265 p=5063 u=ansible |  <node1> PUT /home/ansible/.ansible/tmp/ansible-local-5063RJovd9/tmpN25hfu TO /home/master/.ansible/tmp/ansible-tmp-1564082937.81-220677451569509/AnsiballZ_setup.py
+2019-07-25 20:29:04,287 p=5063 u=ansible |  Using module file /usr/lib/python2.7/site-packages/ansible/modules/system/setup.py
+2019-07-25 20:29:04,291 p=5063 u=ansible |  <node> PUT /home/ansible/.ansible/tmp/ansible-local-5063RJovd9/tmpOHUKaF TO /home/master/.ansible/tmp/ansible-tmp-1564082937.67-66174094062897/AnsiballZ_setup.py
+2019-07-25 20:29:04,303 p=5063 u=ansible |  <node1> SSH: EXEC sftp -b - -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="master"' -o ConnectTimeout=10 -o ControlPath=/home/ansible/.ansible/cp/a19474ea0c '[node1]'
+2019-07-25 20:29:04,313 p=5063 u=ansible |  <node> SSH: EXEC sftp -b - -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="master"' -o ConnectTimeout=10 -o ControlPath=/home/ansible/.ansible/cp/0f90f9be9b '[node]'
+2019-07-25 20:29:04,766 p=5063 u=ansible |  <node1> (0, 'sftp> put /home/ansible/.ansible/tmp/ansible-local-5063RJovd9/tmpN25hfu /home/master/.ansible/tmp/ansible-tmp-1564082937.81-220677451569509/AnsiballZ_setup.py\n', '')
+2019-07-25 20:29:04,777 p=5063 u=ansible |  <node> (0, 'sftp> put /home/ansible/.ansible/tmp/ansible-local-5063RJovd9/tmpOHUKaF /home/master/.ansible/tmp/ansible-tmp-1564082937.67-66174094062897/AnsiballZ_setup.py\n', '')
+2019-07-25 20:29:04,785 p=5063 u=ansible |  <node1> ESTABLISH SSH CONNECTION FOR USER: master
+2019-07-25 20:29:04,790 p=5063 u=ansible |  <node> ESTABLISH SSH CONNECTION FOR USER: master
+2019-07-25 20:29:04,807 p=5063 u=ansible |  <node> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="master"' -o ConnectTimeout=10 -o ControlPath=/home/ansible/.ansible/cp/0f90f9be9b node '/bin/sh -c '"'"'chmod u+x /home/master/.ansible/tmp/ansible-tmp-1564082937.67-66174094062897/ /home/master/.ansible/tmp/ansible-tmp-1564082937.67-66174094062897/AnsiballZ_setup.py && sleep 0'"'"''
+2019-07-25 20:29:04,816 p=5063 u=ansible |  <node1> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="master"' -o ConnectTimeout=10 -o ControlPath=/home/ansible/.ansible/cp/a19474ea0c node1 '/bin/sh -c '"'"'chmod u+x /home/master/.ansible/tmp/ansible-tmp-1564082937.81-220677451569509/ /home/master/.ansible/tmp/ansible-tmp-1564082937.81-220677451569509/AnsiballZ_setup.py && sleep 0'"'"''
+2019-07-25 20:29:05,021 p=5063 u=ansible |  <node1> (0, '', '')
+2019-07-25 20:29:05,045 p=5063 u=ansible |  <node1> ESTABLISH SSH CONNECTION FOR USER: master
+2019-07-25 20:29:05,039 p=5063 u=ansible |  <node> (0, '', '')
+2019-07-25 20:29:05,048 p=5063 u=ansible |  <node> ESTABLISH SSH CONNECTION FOR USER: master
+2019-07-25 20:29:05,064 p=5063 u=ansible |  <node1> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="master"' -o ConnectTimeout=10 -o ControlPath=/home/ansible/.ansible/cp/a19474ea0c -tt node1 '/bin/sh -c '"'"'sudo -H -S -n  -u root /bin/sh -c '"'"'"'"'"'"'"'"'echo BECOME-SUCCESS-bjvrvlhyegispnftdyeucohgtxfvpady ; /usr/bin/python /home/master/.ansible/tmp/ansible-tmp-1564082937.81-220677451569509/AnsiballZ_setup.py'"'"'"'"'"'"'"'"' && sleep 0'"'"''
+2019-07-25 20:29:05,074 p=5063 u=ansible |  <node> SSH: EXEC ssh -C -o ControlMaster=auto -o ControlPersist=60s -o StrictHostKeyChecking=no -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o 'User="master"' -o ConnectTimeout=10 -o ControlPath=/home/ansible/.ansible/cp/0f90f9be9b -tt node '/bin/sh -c '"'"'sudo -H -S -n  -u root /bin/sh -c '"'"'"'"'"'"'"'"'echo BECOME-SUCCESS-fwbiptyqijoyprcxyvzxctnzpkukbpue ; /usr/bin/python /home/master/.ansible/tmp/ansible-tmp-1564082937.67-66174094062897/AnsiballZ_setup.py'"'"'"'"'"'"'"'"' && sleep 0'"'"''
+2019-07-25 20:29:05,297 p=5063 u=ansible |  <node1> (1, 'sudo: a password is required\r\n', 'Shared connection to node1 closed.\r\n')
+2019-07-25 20:29:05,302 p=5063 u=ansible |  <node1> Failed to connect to the host via ssh: Shared connection to node1 closed.
+2019-07-25 20:29:05,375 p=5063 u=ansible |  <node> (1, 'sudo: a password is required\r\n', 'Shared connection to node closed.\r\n')
+2019-07-25 20:29:05,388 p=5063 u=ansible |  <node> Failed to connect to the host via ssh: Shared connection to node closed.
+2019-07-25 20:29:05,483 p=5063 u=ansible |  fatal: [node1]: FAILED! => {
+    "ansible_facts": {}, 
+    "changed": false, 
+    "msg": "The following modules failed to execute: setup\n  setup: MODULE FAILURE\nSee stdout/stderr for the exact error\n"
+}
+2019-07-25 20:29:05,517 p=5063 u=ansible |  fatal: [node]: FAILED! => {
+    "ansible_facts": {}, 
+    "changed": false, 
+    "msg": "The following modules failed to execute: setup\n  setup: MODULE FAILURE\nSee stdout/stderr for the exact error\n"
+}
+2019-07-25 20:29:05,545 p=5063 u=ansible |  PLAY RECAP *******************************************************************************************************************************************************************************
+2019-07-25 20:29:05,546 p=5063 u=ansible |  node                       : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-07-25 20:29:05,547 p=5063 u=ansible |  node1                      : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-07-25 21:27:04,921 p=5314 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-25 21:27:04,922 p=5314 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-25 21:27:09,136 p=5314 u=ansible |  PLAY [app] *******************************************************************************************************************************************************************************
+2019-07-25 21:27:09,242 p=5314 u=ansible |  TASK [Gathering Facts] *******************************************************************************************************************************************************************
+2019-07-25 21:27:17,663 p=5314 u=ansible |  fatal: [node1]: FAILED! => {"ansible_facts": {}, "changed": false, "msg": "The following modules failed to execute: setup\n  setup: MODULE FAILURE\nSee stdout/stderr for the exact error\n"}
+2019-07-25 21:27:17,683 p=5314 u=ansible |  fatal: [node]: FAILED! => {"ansible_facts": {}, "changed": false, "msg": "The following modules failed to execute: setup\n  setup: MODULE FAILURE\nSee stdout/stderr for the exact error\n"}
+2019-07-25 21:27:17,700 p=5314 u=ansible |  PLAY RECAP *******************************************************************************************************************************************************************************
+2019-07-25 21:27:17,702 p=5314 u=ansible |  node                       : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-07-25 21:27:17,703 p=5314 u=ansible |  node1                      : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-07-25 21:36:18,530 p=5431 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-25 21:36:18,533 p=5431 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-25 21:36:22,990 p=5431 u=ansible |  PLAY [Base Configurations for ALL hosts] *************************************************************************************************************************************************
+2019-07-25 21:36:23,086 p=5431 u=ansible |  TASK [Gathering Facts] *******************************************************************************************************************************************************************
+2019-07-25 21:36:33,217 p=5431 u=ansible |  fatal: [localhost]: FAILED! => {"ansible_facts": {}, "changed": false, "msg": "The following modules failed to execute: setup\n  setup: MODULE FAILURE\nSee stdout/stderr for the exact error\n"}
+2019-07-25 21:36:36,104 p=5431 u=ansible |  fatal: [node1]: FAILED! => {"ansible_facts": {}, "changed": false, "msg": "The following modules failed to execute: setup\n  setup: MODULE FAILURE\nSee stdout/stderr for the exact error\n"}
+2019-07-25 21:36:36,323 p=5431 u=ansible |  fatal: [db]: FAILED! => {"ansible_facts": {}, "changed": false, "msg": "The following modules failed to execute: setup\n  setup: MODULE FAILURE\nSee stdout/stderr for the exact error\n"}
+2019-07-25 21:36:36,534 p=5431 u=ansible |  fatal: [node]: FAILED! => {"ansible_facts": {}, "changed": false, "msg": "The following modules failed to execute: setup\n  setup: MODULE FAILURE\nSee stdout/stderr for the exact error\n"}
+2019-07-25 21:36:36,576 p=5431 u=ansible |  fatal: [lb]: FAILED! => {"ansible_facts": {}, "changed": false, "msg": "The following modules failed to execute: setup\n  setup: MODULE FAILURE\nSee stdout/stderr for the exact error\n"}
+2019-07-25 21:36:36,598 p=5431 u=ansible |  PLAY RECAP *******************************************************************************************************************************************************************************
+2019-07-25 21:36:36,600 p=5431 u=ansible |  db                         : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-07-25 21:36:36,601 p=5431 u=ansible |  lb                         : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-07-25 21:36:36,603 p=5431 u=ansible |  localhost                  : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-07-25 21:36:36,604 p=5431 u=ansible |  node                       : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-07-25 21:36:36,606 p=5431 u=ansible |  node1                      : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-07-25 21:39:14,796 p=5638 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-25 21:39:14,798 p=5638 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-25 21:39:19,130 p=5638 u=ansible |  PLAY [Base Configurations for ALL hosts] *************************************************************************************************************************************************
+2019-07-25 21:39:19,224 p=5638 u=ansible |  TASK [Gathering Facts] *******************************************************************************************************************************************************************
+2019-07-25 21:39:31,175 p=5638 u=ansible |  fatal: [localhost]: FAILED! => {"ansible_facts": {}, "changed": false, "msg": "The following modules failed to execute: setup\n  setup: MODULE FAILURE\nSee stdout/stderr for the exact error\n"}
+2019-07-25 21:39:32,356 p=5638 u=ansible |  fatal: [db]: FAILED! => {"ansible_facts": {}, "changed": false, "msg": "The following modules failed to execute: setup\n  setup: MODULE FAILURE\nSee stdout/stderr for the exact error\n"}
+2019-07-25 21:39:32,631 p=5638 u=ansible |  fatal: [lb]: FAILED! => {"ansible_facts": {}, "changed": false, "msg": "The following modules failed to execute: setup\n  setup: MODULE FAILURE\nSee stdout/stderr for the exact error\n"}
+2019-07-25 21:39:42,344 p=5638 u=ansible |  ok: [node1]
+2019-07-25 21:39:42,493 p=5638 u=ansible |  ok: [node]
+2019-07-25 21:39:42,750 p=5638 u=ansible |  TASK [create admin user] *****************************************************************************************************************************************************************
+2019-07-25 21:39:52,954 p=5638 u=ansible |  changed: [node1]
+2019-07-25 21:39:52,974 p=5638 u=ansible |  changed: [node]
+2019-07-25 21:39:53,224 p=5638 u=ansible |  TASK [remove dojo] ***********************************************************************************************************************************************************************
+2019-07-25 21:39:56,820 p=5638 u=ansible |  ok: [node]
+2019-07-25 21:39:57,113 p=5638 u=ansible |  ok: [node1]
+2019-07-25 21:39:57,431 p=5638 u=ansible |  TASK [install tree] **********************************************************************************************************************************************************************
+2019-07-25 21:43:39,878 p=5638 u=ansible |   [WARNING]: Updating cache and auto-installing missing dependency: python-apt
+
+2019-07-25 21:43:39,893 p=5638 u=ansible |   [WARNING]: Could not find aptitude. Using apt-get instead
+
+2019-07-25 21:43:39,894 p=5638 u=ansible |  changed: [node]
+2019-07-25 21:43:40,009 p=5638 u=ansible |  changed: [node1]
+2019-07-25 21:43:40,269 p=5638 u=ansible |  TASK [install ntp] ***********************************************************************************************************************************************************************
+2019-07-25 21:46:41,427 p=5638 u=ansible |  changed: [node]
+2019-07-25 21:46:51,498 p=5638 u=ansible |  changed: [node1]
+2019-07-25 21:46:51,587 p=5638 u=ansible |  PLAY RECAP *******************************************************************************************************************************************************************************
+2019-07-25 21:46:51,588 p=5638 u=ansible |  db                         : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-07-25 21:46:51,590 p=5638 u=ansible |  lb                         : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-07-25 21:46:51,593 p=5638 u=ansible |  localhost                  : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-07-25 21:46:51,594 p=5638 u=ansible |  node                       : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-07-25 21:46:51,595 p=5638 u=ansible |  node1                      : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-07-25 21:53:30,618 p=7649 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-25 21:53:30,624 p=7649 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-25 21:53:35,233 p=7649 u=ansible |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to be in '/home/ansible/ansible-demo/sample_webapp/system.yml': line 12, column 9, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+      - name: install tree
+        ^ here
+

@@ -1,0 +1,16 @@
+---
+  - name: Base Configurations for ALL hosts
+    hosts: all
+    become: true
+    tasks:
+      - name: create admin user
+        user: name=admin state=present uid=5001
+ 
+      - name: remove dojo
+        user: name=dojo  state=absent
+ 
+      - name: install tree
+        apt-get:  name=tree  state=present
+ 
+      - name: install ntp
+        apt-get:  name=ntp   state=present
