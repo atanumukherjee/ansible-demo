@@ -181,3 +181,97 @@ The offending line appears to be:
       - name: install tree
         ^ here
 
+2019-07-25 22:51:51,316 p=7870 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-25 22:51:51,319 p=7870 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-25 22:51:54,304 p=7870 u=ansible |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to be in '/home/ansible/ansible-demo/sample_webapp/system.yml': line 12, column 9, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+      - name: install tree
+        ^ here
+
+2019-07-25 22:52:52,846 p=7879 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-25 22:52:52,853 p=7879 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-25 22:53:00,033 p=7879 u=ansible |  PLAY [Base Configurations for ALL hosts] *************************************************************************************************************************************************
+2019-07-25 22:53:00,160 p=7879 u=ansible |  TASK [Gathering Facts] *******************************************************************************************************************************************************************
+2019-07-25 22:53:14,238 p=7879 u=ansible |  fatal: [localhost]: FAILED! => {"ansible_facts": {}, "changed": false, "msg": "The following modules failed to execute: setup\n  setup: MODULE FAILURE\nSee stdout/stderr for the exact error\n"}
+2019-07-25 22:53:32,210 p=7879 u=ansible |  ok: [node]
+2019-07-25 22:53:33,305 p=7879 u=ansible |  ok: [node1]
+2019-07-25 22:53:33,648 p=7879 u=ansible |  ok: [lb]
+2019-07-25 22:53:33,714 p=7879 u=ansible |  ok: [db]
+2019-07-25 22:53:33,996 p=7879 u=ansible |  TASK [create admin user] *****************************************************************************************************************************************************************
+2019-07-25 22:53:48,783 p=7879 u=ansible |  ok: [node]
+2019-07-25 22:53:48,912 p=7879 u=ansible |  ok: [node1]
+2019-07-25 22:53:49,278 p=7879 u=ansible |  changed: [db]
+2019-07-25 22:53:49,368 p=7879 u=ansible |  changed: [lb]
+2019-07-25 22:53:49,651 p=7879 u=ansible |  TASK [remove dojo] ***********************************************************************************************************************************************************************
+2019-07-25 22:53:54,848 p=7879 u=ansible |  ok: [node]
+2019-07-25 22:53:56,910 p=7879 u=ansible |  ok: [node1]
+2019-07-25 22:53:57,693 p=7879 u=ansible |  ok: [lb]
+2019-07-25 22:53:57,832 p=7879 u=ansible |  ok: [db]
+2019-07-25 22:53:58,101 p=7879 u=ansible |  TASK [install tree] **********************************************************************************************************************************************************************
+2019-07-25 22:55:27,152 p=7879 u=ansible |   [WARNING]: Could not find aptitude. Using apt-get instead
+
+2019-07-25 22:55:27,154 p=7879 u=ansible |  ok: [node]
+2019-07-25 22:55:27,959 p=7879 u=ansible |  ok: [node1]
+2019-07-25 22:58:10,204 p=7879 u=ansible |   [WARNING]: Updating cache and auto-installing missing dependency: python-apt
+
+2019-07-25 22:58:10,220 p=7879 u=ansible |  changed: [db]
+2019-07-25 22:58:10,236 p=7879 u=ansible |  changed: [lb]
+2019-07-25 22:58:10,506 p=7879 u=ansible |  TASK [install ntp] ***********************************************************************************************************************************************************************
+2019-07-25 22:59:32,052 p=7879 u=ansible |  ok: [node]
+2019-07-25 22:59:34,248 p=7879 u=ansible |  ok: [node1]
+2019-07-25 23:02:07,083 p=7879 u=ansible |  changed: [lb]
+2019-07-25 23:02:07,233 p=7879 u=ansible |  changed: [db]
+2019-07-25 23:02:07,283 p=7879 u=ansible |  PLAY RECAP *******************************************************************************************************************************************************************************
+2019-07-25 23:02:07,286 p=7879 u=ansible |  db                         : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-07-25 23:02:07,287 p=7879 u=ansible |  lb                         : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-07-25 23:02:07,289 p=7879 u=ansible |  localhost                  : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-07-25 23:02:07,293 p=7879 u=ansible |  node                       : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-07-25 23:02:07,295 p=7879 u=ansible |  node1                      : ok=5    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-07-25 23:02:51,308 p=10044 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-25 23:02:51,313 p=10044 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-25 23:02:58,436 p=10044 u=ansible |  PLAY [app] *******************************************************************************************************************************************************************************
+2019-07-25 23:02:58,665 p=10044 u=ansible |  TASK [Gathering Facts] *******************************************************************************************************************************************************************
+2019-07-25 23:03:17,328 p=10044 u=ansible |  ok: [node]
+2019-07-25 23:03:18,014 p=10044 u=ansible |  ok: [node1]
+2019-07-25 23:03:18,285 p=10044 u=ansible |  TASK [apache : install the apache web server] ********************************************************************************************************************************************
+2019-07-25 23:07:50,313 p=10044 u=ansible |   [WARNING]: Could not find aptitude. Using apt-get instead
+
+2019-07-25 23:07:50,335 p=10044 u=ansible |  changed: [node]
+2019-07-25 23:07:53,527 p=10044 u=ansible |  changed: [node1]
+2019-07-25 23:07:53,877 p=10044 u=ansible |  TASK [apache : start apche web server] ***************************************************************************************************************************************************
+2019-07-25 23:08:02,130 p=10044 u=ansible |  fatal: [node]: FAILED! => {"changed": false, "msg": "Unsupported parameters for (service) module: enable Supported parameters include: arguments, enabled, name, pattern, runlevel, sleep, state"}
+2019-07-25 23:08:02,173 p=10044 u=ansible |  fatal: [node1]: FAILED! => {"changed": false, "msg": "Unsupported parameters for (service) module: enable Supported parameters include: arguments, enabled, name, pattern, runlevel, sleep, state"}
+2019-07-25 23:08:02,390 p=10044 u=ansible |  PLAY RECAP *******************************************************************************************************************************************************************************
+2019-07-25 23:08:02,393 p=10044 u=ansible |  node                       : ok=2    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-07-25 23:08:02,397 p=10044 u=ansible |  node1                      : ok=2    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2019-07-25 23:12:33,340 p=11718 u=ansible |   [WARNING]: Found both group and host with same name: lb
+
+2019-07-25 23:12:33,342 p=11718 u=ansible |   [WARNING]: Found both group and host with same name: db
+
+2019-07-25 23:12:39,192 p=11718 u=ansible |  PLAY [app] *******************************************************************************************************************************************************************************
+2019-07-25 23:12:39,317 p=11718 u=ansible |  TASK [Gathering Facts] *******************************************************************************************************************************************************************
+2019-07-25 23:12:55,682 p=11718 u=ansible |  ok: [node]
+2019-07-25 23:12:55,750 p=11718 u=ansible |  ok: [node1]
+2019-07-25 23:12:56,031 p=11718 u=ansible |  TASK [apache : install the apache web server] ********************************************************************************************************************************************
+2019-07-25 23:13:55,391 p=11718 u=ansible |   [WARNING]: Could not find aptitude. Using apt-get instead
+
+2019-07-25 23:13:55,393 p=11718 u=ansible |  ok: [node]
+2019-07-25 23:13:55,513 p=11718 u=ansible |  ok: [node1]
+2019-07-25 23:13:55,779 p=11718 u=ansible |  TASK [apache : start apche web server] ***************************************************************************************************************************************************
+2019-07-25 23:14:06,091 p=11718 u=ansible |  changed: [node]
+2019-07-25 23:14:06,112 p=11718 u=ansible |  changed: [node1]
+2019-07-25 23:14:06,135 p=11718 u=ansible |  PLAY RECAP *******************************************************************************************************************************************************************************
+2019-07-25 23:14:06,136 p=11718 u=ansible |  node                       : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-07-25 23:14:06,138 p=11718 u=ansible |  node1                      : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
