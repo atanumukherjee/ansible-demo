@@ -3,4 +3,7 @@ ansible -i inventory.ini app -m copy -a "src=test.txt dest=/tmp/test.txt"
 
 {to execute root command the user should have sudo access, to execute this below command is used toexecute as sudo(this is for 2.2. and greater)}
 ansible -i inventory.ini app --become --ask-become-pass -m group -a "name=admin state=present" 
+ansible-playbook -i hosts app.yml  --syntax-check
+ansible-playbook -i hosts app.yml --ask-become-pass
+ansible-playbook -i hosts system.yml --ask-become-pass
 
