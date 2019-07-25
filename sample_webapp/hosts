@@ -1,5 +1,6 @@
 [local]
 localhost ansible_connection=local
+
 [all]
 node
 node1
