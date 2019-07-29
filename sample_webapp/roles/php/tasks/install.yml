@@ -1,0 +1,10 @@
+---
+# install php related packages
+  - name: install php
+    package:
+      name: "{‌{ item }}"
+      state: installed
+    with_items:
+      - php
+      - php-mysql
+    notify: Restart apache service  
