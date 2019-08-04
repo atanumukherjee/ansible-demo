@@ -1,2 +1,4 @@
 ---
 # defaults file for frontend
+  app:
+    version: V-1.1.2 

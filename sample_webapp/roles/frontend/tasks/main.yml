@@ -15,7 +15,7 @@
 
 - name: download release file from git repo
   get_url:
-    url: https://github.com/atanumukherjee/ansible-demo/archive/V-1.1.1.zip
+    url: https://github.com/atanumukherjee/ansible-demo/archive/{{ app.version }}.zip
     dest: /opt/app/release
     validate_certs: no
 
@@ -26,13 +26,13 @@
 
 - name: Extract a release 
   unarchive:
-    src: /opt/app/release/ansible-demo-V-1.1.1.zip
+    src: /opt/app/release/ansible-demo-{{ app.version }}.zip
     dest: /opt/app/release
     #remote_src: yes
     copy: no
  
 - name: setup symlinks 
   file:
-    src: /opt/app/release/ansible-demo-V-1.1.1
+    src: /opt/app/release/ansible-demo-{{ app.version }}
     dest: /var/www/html/app
     state: link
