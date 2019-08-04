@@ -17,20 +17,20 @@
   get_url:
     url: https://github.com/atanumukherjee/ansible-demo/archive/V-1.1.1.zip
     dest: /opt/app/release
-   # mode: 0755
+    validate_certs: no
+
 #- name: Change the working directory to somedir/ before executing the command.
  # shell: wget --no-check-certificate https://github.com/atanumukherjee/ansible-demo/archive/V-1.1.1.zip
   #args:
    # chdir: /opt/app/release
 
-- name: download and extract a release 
+- name: Extract a release 
   unarchive:
     src: /opt/app/release/ansible-demo-V-1.1.1.zip
     dest: /opt/app/release
     #remote_src: yes
     copy: no
  
-
 - name: setup symlinks 
   file:
     src: /opt/app/release/ansible-demo-V-1.1.1

@@ -1,164 +1,21 @@
-2019-08-04 17:06:16,964 p=4552 u=ansible |   [WARNING]: Found both group and host with same name: lb
+2019-08-04 20:18:10,283 p=10567 u=ansible |   [WARNING]: Found both group and host with same name: lb
 
-2019-08-04 17:06:16,965 p=4552 u=ansible |   [WARNING]: Found both group and host with same name: db
+2019-08-04 20:18:10,284 p=10567 u=ansible |   [WARNING]: Found both group and host with same name: db
 
-2019-08-04 17:06:19,540 p=4552 u=ansible |  PLAY [app] *******************************************************************************************************************************************************************************
-2019-08-04 17:06:19,631 p=4552 u=ansible |  TASK [Gathering Facts] *******************************************************************************************************************************************************************
-2019-08-04 17:06:19,806 p=4552 u=ansible |   [ERROR]: User interrupted execution
+2019-08-04 20:18:12,569 p=10567 u=ansible |  PLAY [app] *******************************************************************************************************************************************************************************
+2019-08-04 20:18:12,648 p=10567 u=ansible |  TASK [Gathering Facts] *******************************************************************************************************************************************************************
+2019-08-04 20:18:18,078 p=10567 u=ansible |  ok: [node]
+2019-08-04 20:18:18,232 p=10567 u=ansible |  TASK [frontend : create release directory  structure] ************************************************************************************************************************************
+2019-08-04 20:18:20,391 p=10567 u=ansible |  ok: [node]
+2019-08-04 20:18:20,545 p=10567 u=ansible |  TASK [frontend : install unzip package] **************************************************************************************************************************************************
+2019-08-04 20:18:30,853 p=10567 u=ansible |   [WARNING]: Could not find aptitude. Using apt-get instead
 
-2019-08-04 17:07:00,187 p=4566 u=ansible |   [ERROR]: User interrupted execution
-
-2019-08-04 17:07:34,340 p=4572 u=ansible |   [WARNING]: Found both group and host with same name: lb
-
-2019-08-04 17:07:34,341 p=4572 u=ansible |   [WARNING]: Found both group and host with same name: db
-
-2019-08-04 17:07:36,819 p=4572 u=ansible |  PLAY [app] *******************************************************************************************************************************************************************************
-2019-08-04 17:07:36,898 p=4572 u=ansible |  TASK [Gathering Facts] *******************************************************************************************************************************************************************
-2019-08-04 17:07:43,102 p=4572 u=ansible |  ok: [node1]
-2019-08-04 17:07:43,288 p=4572 u=ansible |  TASK [frontend : create release directory  structure] ************************************************************************************************************************************
-2019-08-04 17:07:45,649 p=4572 u=ansible |  changed: [node1]
-2019-08-04 17:07:45,806 p=4572 u=ansible |  TASK [frontend : install unzip package] **************************************************************************************************************************************************
-2019-08-04 17:07:56,873 p=4572 u=ansible |   [WARNING]: Could not find aptitude. Using apt-get instead
-
-2019-08-04 17:07:56,874 p=4572 u=ansible |  ok: [node1]
-2019-08-04 17:07:57,024 p=4572 u=ansible |  TASK [frontend : download release file from git repo] ************************************************************************************************************************************
-2019-08-04 17:08:01,553 p=4572 u=ansible |  changed: [node1]
-2019-08-04 17:08:01,697 p=4572 u=ansible |  TASK [frontend : download and extract a release] *****************************************************************************************************************************************
-2019-08-04 17:08:01,905 p=4572 u=ansible |  fatal: [node1]: FAILED! => {"changed": false, "msg": "Could not find or access 'V-1.1.1.zip'\nSearched in:\n\t/home/ansible/ansible-demo/sample_webapp/roles/frontend/files/V-1.1.1.zip\n\t/home/ansible/ansible-demo/sample_webapp/roles/frontend/V-1.1.1.zip\n\t/home/ansible/ansible-demo/sample_webapp/roles/frontend/tasks/files/V-1.1.1.zip\n\t/home/ansible/ansible-demo/sample_webapp/roles/frontend/tasks/V-1.1.1.zip\n\t/home/ansible/ansible-demo/sample_webapp/files/V-1.1.1.zip\n\t/home/ansible/ansible-demo/sample_webapp/V-1.1.1.zip on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
-2019-08-04 17:08:01,908 p=4572 u=ansible |  PLAY RECAP *******************************************************************************************************************************************************************************
-2019-08-04 17:08:01,909 p=4572 u=ansible |  node1                      : ok=4    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
-2019-08-04 17:09:16,752 p=4754 u=ansible |   [WARNING]: Found both group and host with same name: lb
-
-2019-08-04 17:09:16,753 p=4754 u=ansible |   [WARNING]: Found both group and host with same name: db
-
-2019-08-04 17:09:19,340 p=4754 u=ansible |  PLAY [app] *******************************************************************************************************************************************************************************
-2019-08-04 17:09:19,419 p=4754 u=ansible |  TASK [Gathering Facts] *******************************************************************************************************************************************************************
-2019-08-04 17:09:25,402 p=4754 u=ansible |  ok: [node1]
-2019-08-04 17:09:25,556 p=4754 u=ansible |  TASK [frontend : create release directory  structure] ************************************************************************************************************************************
-2019-08-04 17:09:27,729 p=4754 u=ansible |  ok: [node1]
-2019-08-04 17:09:27,883 p=4754 u=ansible |  TASK [frontend : install unzip package] **************************************************************************************************************************************************
-2019-08-04 17:09:39,090 p=4754 u=ansible |   [WARNING]: Could not find aptitude. Using apt-get instead
-
-2019-08-04 17:09:39,091 p=4754 u=ansible |  ok: [node1]
-2019-08-04 17:09:39,240 p=4754 u=ansible |  TASK [frontend : download release file from git repo] ************************************************************************************************************************************
-2019-08-04 17:09:44,235 p=4754 u=ansible |  changed: [node1]
-2019-08-04 17:09:44,379 p=4754 u=ansible |  TASK [frontend : download and extract a release] *****************************************************************************************************************************************
-2019-08-04 17:09:44,582 p=4754 u=ansible |  fatal: [node1]: FAILED! => {"changed": false, "msg": "Could not find or access 'V-1.1.1.zip'\nSearched in:\n\t/home/ansible/ansible-demo/sample_webapp/roles/frontend/files/V-1.1.1.zip\n\t/home/ansible/ansible-demo/sample_webapp/roles/frontend/V-1.1.1.zip\n\t/home/ansible/ansible-demo/sample_webapp/roles/frontend/tasks/files/V-1.1.1.zip\n\t/home/ansible/ansible-demo/sample_webapp/roles/frontend/tasks/V-1.1.1.zip\n\t/home/ansible/ansible-demo/sample_webapp/files/V-1.1.1.zip\n\t/home/ansible/ansible-demo/sample_webapp/V-1.1.1.zip on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
-2019-08-04 17:09:44,585 p=4754 u=ansible |  PLAY RECAP *******************************************************************************************************************************************************************************
-2019-08-04 17:09:44,586 p=4754 u=ansible |  node1                      : ok=4    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
-2019-08-04 17:10:50,771 p=4934 u=ansible |   [WARNING]: Found both group and host with same name: lb
-
-2019-08-04 17:10:50,772 p=4934 u=ansible |   [WARNING]: Found both group and host with same name: db
-
-2019-08-04 17:10:53,154 p=4934 u=ansible |  PLAY [app] *******************************************************************************************************************************************************************************
-2019-08-04 17:10:53,235 p=4934 u=ansible |  TASK [Gathering Facts] *******************************************************************************************************************************************************************
-2019-08-04 17:10:59,450 p=4934 u=ansible |  ok: [node1]
-2019-08-04 17:10:59,637 p=4934 u=ansible |  TASK [frontend : create release directory  structure] ************************************************************************************************************************************
-2019-08-04 17:11:01,789 p=4934 u=ansible |  changed: [node1]
-2019-08-04 17:11:01,936 p=4934 u=ansible |  TASK [frontend : install unzip package] **************************************************************************************************************************************************
-2019-08-04 17:11:13,427 p=4934 u=ansible |   [WARNING]: Could not find aptitude. Using apt-get instead
-
-2019-08-04 17:11:13,428 p=4934 u=ansible |  ok: [node1]
-2019-08-04 17:11:13,570 p=4934 u=ansible |  TASK [frontend : download release file from git repo] ************************************************************************************************************************************
-2019-08-04 17:11:18,424 p=4934 u=ansible |  ok: [node1]
-2019-08-04 17:11:18,615 p=4934 u=ansible |  TASK [frontend : download and extract a release] *****************************************************************************************************************************************
-2019-08-04 17:11:23,136 p=4934 u=ansible |  fatal: [node1]: FAILED! => {"changed": false, "msg": "Source 'ansible-demo-V-1.1.1.zip' does not exist"}
-2019-08-04 17:11:23,141 p=4934 u=ansible |  PLAY RECAP *******************************************************************************************************************************************************************************
-2019-08-04 17:11:23,142 p=4934 u=ansible |  node1                      : ok=4    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
-2019-08-04 17:14:33,655 p=5165 u=ansible |   [WARNING]: Found both group and host with same name: lb
-
-2019-08-04 17:14:33,656 p=5165 u=ansible |   [WARNING]: Found both group and host with same name: db
-
-2019-08-04 17:14:36,272 p=5165 u=ansible |  PLAY [app] *******************************************************************************************************************************************************************************
-2019-08-04 17:14:36,370 p=5165 u=ansible |  TASK [Gathering Facts] *******************************************************************************************************************************************************************
-2019-08-04 17:14:42,597 p=5165 u=ansible |  ok: [node1]
-2019-08-04 17:14:42,796 p=5165 u=ansible |  TASK [frontend : create release directory  structure] ************************************************************************************************************************************
-2019-08-04 17:14:45,196 p=5165 u=ansible |  ok: [node1]
-2019-08-04 17:14:45,366 p=5165 u=ansible |  TASK [frontend : install unzip package] **************************************************************************************************************************************************
-2019-08-04 17:14:56,330 p=5165 u=ansible |   [WARNING]: Could not find aptitude. Using apt-get instead
-
-2019-08-04 17:14:56,331 p=5165 u=ansible |  ok: [node1]
-2019-08-04 17:14:56,512 p=5165 u=ansible |  TASK [frontend : download release file from git repo] ************************************************************************************************************************************
-2019-08-04 17:15:01,097 p=5165 u=ansible |  ok: [node1]
-2019-08-04 17:15:01,247 p=5165 u=ansible |  TASK [frontend : download and extract a release] *****************************************************************************************************************************************
-2019-08-04 17:15:01,450 p=5165 u=ansible |  fatal: [node1]: FAILED! => {"changed": false, "msg": "Could not find or access 'ansible-demo-V-1.1.1.zip'\nSearched in:\n\t/home/ansible/ansible-demo/sample_webapp/roles/frontend/files/ansible-demo-V-1.1.1.zip\n\t/home/ansible/ansible-demo/sample_webapp/roles/frontend/ansible-demo-V-1.1.1.zip\n\t/home/ansible/ansible-demo/sample_webapp/roles/frontend/tasks/files/ansible-demo-V-1.1.1.zip\n\t/home/ansible/ansible-demo/sample_webapp/roles/frontend/tasks/ansible-demo-V-1.1.1.zip\n\t/home/ansible/ansible-demo/sample_webapp/files/ansible-demo-V-1.1.1.zip\n\t/home/ansible/ansible-demo/sample_webapp/ansible-demo-V-1.1.1.zip on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
-2019-08-04 17:15:01,453 p=5165 u=ansible |  PLAY RECAP *******************************************************************************************************************************************************************************
-2019-08-04 17:15:01,454 p=5165 u=ansible |  node1                      : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
-2019-08-04 17:31:41,498 p=5399 u=ansible |   [WARNING]: Found both group and host with same name: lb
-
-2019-08-04 17:31:41,499 p=5399 u=ansible |   [WARNING]: Found both group and host with same name: db
-
-2019-08-04 17:31:44,192 p=5399 u=ansible |  PLAY [app] *******************************************************************************************************************************************************************************
-2019-08-04 17:31:44,275 p=5399 u=ansible |  TASK [Gathering Facts] *******************************************************************************************************************************************************************
-2019-08-04 17:31:50,235 p=5399 u=ansible |  ok: [node1]
-2019-08-04 17:31:50,388 p=5399 u=ansible |  TASK [frontend : create release directory  structure] ************************************************************************************************************************************
-2019-08-04 17:31:52,521 p=5399 u=ansible |  ok: [node1]
-2019-08-04 17:31:52,665 p=5399 u=ansible |  TASK [frontend : install unzip package] **************************************************************************************************************************************************
-2019-08-04 17:32:03,898 p=5399 u=ansible |   [WARNING]: Could not find aptitude. Using apt-get instead
-
-2019-08-04 17:32:03,898 p=5399 u=ansible |  ok: [node1]
-2019-08-04 17:32:04,068 p=5399 u=ansible |  TASK [frontend : download release file from git repo] ************************************************************************************************************************************
-2019-08-04 17:32:08,713 p=5399 u=ansible |  ok: [node1]
-2019-08-04 17:32:08,869 p=5399 u=ansible |  TASK [frontend : download and extract a release] *****************************************************************************************************************************************
-2019-08-04 17:32:09,086 p=5399 u=ansible |  fatal: [node1]: FAILED! => {"changed": false, "msg": "parameters are mutually exclusive: ('copy', 'remote_src')"}
-2019-08-04 17:32:09,089 p=5399 u=ansible |  PLAY RECAP *******************************************************************************************************************************************************************************
-2019-08-04 17:32:09,090 p=5399 u=ansible |  node1                      : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
-2019-08-04 17:34:23,193 p=5580 u=ansible |   [WARNING]: Found both group and host with same name: lb
-
-2019-08-04 17:34:23,194 p=5580 u=ansible |   [WARNING]: Found both group and host with same name: db
-
-2019-08-04 17:34:25,709 p=5580 u=ansible |  PLAY [app] *******************************************************************************************************************************************************************************
-2019-08-04 17:34:25,786 p=5580 u=ansible |  TASK [Gathering Facts] *******************************************************************************************************************************************************************
-2019-08-04 17:34:31,851 p=5580 u=ansible |  ok: [node1]
-2019-08-04 17:34:32,007 p=5580 u=ansible |  TASK [frontend : create release directory  structure] ************************************************************************************************************************************
-2019-08-04 17:34:34,216 p=5580 u=ansible |  ok: [node1]
-2019-08-04 17:34:34,391 p=5580 u=ansible |  TASK [frontend : install unzip package] **************************************************************************************************************************************************
-2019-08-04 17:34:45,497 p=5580 u=ansible |   [WARNING]: Could not find aptitude. Using apt-get instead
-
-2019-08-04 17:34:45,501 p=5580 u=ansible |  ok: [node1]
-2019-08-04 17:34:45,646 p=5580 u=ansible |  TASK [frontend : download release file from git repo] ************************************************************************************************************************************
-2019-08-04 17:34:50,604 p=5580 u=ansible |  ok: [node1]
-2019-08-04 17:34:50,748 p=5580 u=ansible |  TASK [frontend : download and extract a release] *****************************************************************************************************************************************
-2019-08-04 17:34:55,391 p=5580 u=ansible |  fatal: [node1]: FAILED! => {"changed": false, "msg": "Source 'ansible-demo-V-1.1.1.zip' does not exist"}
-2019-08-04 17:34:55,398 p=5580 u=ansible |  PLAY RECAP *******************************************************************************************************************************************************************************
-2019-08-04 17:34:55,399 p=5580 u=ansible |  node1                      : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
-2019-08-04 17:36:01,420 p=5815 u=ansible |   [WARNING]: Found both group and host with same name: lb
-
-2019-08-04 17:36:01,421 p=5815 u=ansible |   [WARNING]: Found both group and host with same name: db
-
-2019-08-04 17:36:03,956 p=5815 u=ansible |  PLAY [app] *******************************************************************************************************************************************************************************
-2019-08-04 17:36:04,036 p=5815 u=ansible |  TASK [Gathering Facts] *******************************************************************************************************************************************************************
-2019-08-04 17:36:10,005 p=5815 u=ansible |  ok: [node1]
-2019-08-04 17:36:10,212 p=5815 u=ansible |  TASK [frontend : create release directory  structure] ************************************************************************************************************************************
-2019-08-04 17:36:12,538 p=5815 u=ansible |  ok: [node1]
-2019-08-04 17:36:12,684 p=5815 u=ansible |  TASK [frontend : install unzip package] **************************************************************************************************************************************************
-2019-08-04 17:36:24,252 p=5815 u=ansible |   [WARNING]: Could not find aptitude. Using apt-get instead
-
-2019-08-04 17:36:24,255 p=5815 u=ansible |  ok: [node1]
-2019-08-04 17:36:24,517 p=5815 u=ansible |  TASK [frontend : download release file from git repo] ************************************************************************************************************************************
-2019-08-04 17:36:29,791 p=5815 u=ansible |  changed: [node1]
-2019-08-04 17:36:29,949 p=5815 u=ansible |  TASK [frontend : download and extract a release] *****************************************************************************************************************************************
-2019-08-04 17:36:34,447 p=5815 u=ansible |  fatal: [node1]: FAILED! => {"changed": false, "msg": "Source 'ansible-demo-V-1.1.1.zip' does not exist"}
-2019-08-04 17:36:34,454 p=5815 u=ansible |  PLAY RECAP *******************************************************************************************************************************************************************************
-2019-08-04 17:36:34,455 p=5815 u=ansible |  node1                      : ok=4    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
-2019-08-04 17:44:10,014 p=6048 u=ansible |   [WARNING]: Found both group and host with same name: lb
-
-2019-08-04 17:44:10,015 p=6048 u=ansible |   [WARNING]: Found both group and host with same name: db
-
-2019-08-04 17:44:12,573 p=6048 u=ansible |  PLAY [app] *******************************************************************************************************************************************************************************
-2019-08-04 17:44:12,656 p=6048 u=ansible |  TASK [Gathering Facts] *******************************************************************************************************************************************************************
-2019-08-04 17:44:18,686 p=6048 u=ansible |  ok: [node1]
-2019-08-04 17:44:18,858 p=6048 u=ansible |  TASK [frontend : create release directory  structure] ************************************************************************************************************************************
-2019-08-04 17:44:21,398 p=6048 u=ansible |  changed: [node1]
-2019-08-04 17:44:21,544 p=6048 u=ansible |  TASK [frontend : install unzip package] **************************************************************************************************************************************************
-2019-08-04 17:44:33,038 p=6048 u=ansible |   [WARNING]: Could not find aptitude. Using apt-get instead
-
-2019-08-04 17:44:33,039 p=6048 u=ansible |  ok: [node1]
-2019-08-04 17:44:33,226 p=6048 u=ansible |  TASK [frontend : download release file from git repo] ************************************************************************************************************************************
-2019-08-04 17:44:38,262 p=6048 u=ansible |  ok: [node1]
-2019-08-04 17:44:38,418 p=6048 u=ansible |  TASK [frontend : download and extract a release] *****************************************************************************************************************************************
-2019-08-04 17:44:43,537 p=6048 u=ansible |  changed: [node1]
-2019-08-04 17:44:43,714 p=6048 u=ansible |  TASK [frontend : setup symlinks] *********************************************************************************************************************************************************
-2019-08-04 17:44:44,586 p=6048 u=ansible |  changed: [node1]
-2019-08-04 17:44:44,594 p=6048 u=ansible |  PLAY RECAP *******************************************************************************************************************************************************************************
-2019-08-04 17:44:44,595 p=6048 u=ansible |  node1                      : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2019-08-04 20:18:30,854 p=10567 u=ansible |  ok: [node]
+2019-08-04 20:18:30,992 p=10567 u=ansible |  TASK [frontend : download release file from git repo] ************************************************************************************************************************************
+2019-08-04 20:18:34,472 p=10567 u=ansible |  changed: [node]
+2019-08-04 20:18:34,635 p=10567 u=ansible |  TASK [frontend : Extract a release] ******************************************************************************************************************************************************
+2019-08-04 20:18:39,536 p=10567 u=ansible |  changed: [node]
+2019-08-04 20:18:39,693 p=10567 u=ansible |  TASK [frontend : setup symlinks] *********************************************************************************************************************************************************
+2019-08-04 20:18:40,502 p=10567 u=ansible |  changed: [node]
+2019-08-04 20:18:40,509 p=10567 u=ansible |  PLAY RECAP *******************************************************************************************************************************************************************************
+2019-08-04 20:18:40,510 p=10567 u=ansible |  node                       : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
