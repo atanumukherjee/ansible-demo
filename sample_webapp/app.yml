@@ -2,4 +2,8 @@
 - hosts: app
   become: true
   roles:
-    - apache
+    #- apache
+    #- php
+      - {role: 'apache', tags: 'apache'}
+      - {role: 'php', tags: 'php'}
+      - {role: 'frontend', tags: 'frontend'}
