@@ -8,4 +8,5 @@ ansible -i inventory.ini app --become --ask-become-pass -m group -a "name=admin 
 ansible-playbook -i hosts app.yml  --syntax-check
 ansible-playbook -i hosts app.yml --ask-become-pass
 ansible-playbook -i hosts system.yml --ask-become-pass
+dpkg --get-selections | grep php
 
