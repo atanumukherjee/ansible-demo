@@ -1,0 +1,25 @@
+---
+- name: create release directory  structure 
+  file:
+    path: /opt/app/release
+    state: directory
+    mode: 0755
+    recurse: true
+
+- name: install unzip package
+  package: 
+    name: unzip
+    state: installed
+
+- name: download and extract a release 
+  unarchive:
+    src: https://github.com/atanumukherjee/ansible-demo/archive/V-1.1.1.zip
+    dest: /opt/app/release
+    remote_src: yes
+ 
+
+- name: setup symlinks 
+  file:
+    src: /opt/app/release/ansible-demo-V-1.1.1
+    dest: /var/www/html/app
+    state: link
