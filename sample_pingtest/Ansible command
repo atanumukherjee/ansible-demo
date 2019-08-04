@@ -8,4 +8,12 @@ ansible -i inventory.ini app --become --ask-become-pass -m group -a "name=admin 
 ansible-playbook -i hosts app.yml  --syntax-check
 ansible-playbook -i hosts app.yml --ask-become-pass
 ansible-playbook -i hosts system.yml --ask-become-pass
+ansible-playbook -i hosts --tags "frontend" app.yml --ask-become-pass --limit node1
+
+sudo apt-get remove --purge php-mysql
+sudo apt-get remove --purge php
+sudo apt autoremove php
+dpkg --get-selections | grep php
+apt --installed list | grep php
+
 
