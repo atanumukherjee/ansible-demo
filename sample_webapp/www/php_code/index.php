@@ -1,11 +1,32 @@
 <?php include("includes/config.php");?>
+<?php
+   //$url=$_SERVER['REQUEST_URI'];
+   //header("Refresh: 1; URL=$url");
+?>
 <!DOCTYPE html>
 <html>
+<//meta http-equiv="refresh" content="1">
+<script type="text/javascript">
+   // onload=”javascript:setTimeout(“location.reload(true);”,10000);”
+   function display_c(){
+var refresh=1000; // Refresh rate in milli seconds
+mytime=setTimeout('display_ct()',refresh)
+}
+
+function display_ct() {
+var x = new Date()
+var x1=x.toUTCString();// changing the display to UTC string
+document.getElementById('ct').innerHTML = x;
+tt=display_c();
+ }
+
+</script>
 <head>
 	<?php include("includes/header.php");?>
 </head>
-<body>
+<body onload=display_ct();>
 
+<span id='ct' ></span>
 <?php include("includes/design-top.php");?>
 <?php include("includes/navigation.php");?>
 

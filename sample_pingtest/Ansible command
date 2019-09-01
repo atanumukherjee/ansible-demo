@@ -1,3 +1,4 @@
+ssh-keygen -t rsa
 ssh-copy-id master@node1
 
 ansible -i inventory.ini all -f 1 -a "free"  {-f will execute one server one at a time}

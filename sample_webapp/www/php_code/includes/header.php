@@ -1,5 +1,9 @@
 <title><?php print $PAGE_TITLE;?></title>
-
+<span style="float:right;">
+<?php
+date_default_timezone_set("Europe/London");
+echo $tdtp=date("Y-m-d  H:i:s A",time()); $tdtp;
+?></span>
 <?php if ($CURRENT_PAGE == "Index") { ?>
 	<meta name="description" content="" />
 	<meta name="keywords" content="" /> 
