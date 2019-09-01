@@ -1,0 +1,28 @@
+---
+# install php related packages
+  - name: install php
+    package:
+      name: "{{ item }}"
+      state: installed
+    with_items:
+      - php
+      - php-mysql
+    notify: restart apache
+
+  - name: create release directory  structure
+    file:
+      path: /opt/app/release
+      state: directory
+      mode: 0755
+      recurse: true
+
+  - name: install the index file
+    template:
+      src: index.html.j2
+      dest: /opt/app/release/index.html
+
+  - name: setup symlinks
+    file:
+      src: /opt/app/release/index.html
+      dest: /var/www/html/app
+      state: link

@@ -1,0 +1,8 @@
+---
+# tasks file for apache
+   - import_tasks: install.yml
+   - import_tasks: service.yml
+
+   - name: describe the hosts
+     debug: msg="Computer {{ ansible_hostname }} is running
+      ↪{{ ansible_os_family }} or equivalent"  
